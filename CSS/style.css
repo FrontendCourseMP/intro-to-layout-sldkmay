@@ -1,0 +1,195 @@
+
+h1 {
+    color: #1A1E42;
+font-family: Space Grotesk;
+font-size: 48px;
+font-style: normal;
+font-weight: 600;
+line-height: 56px; /* 116.667% */
+letter-spacing: -1.92px;
+  }
+  h2 {
+    color: var(--Dark-Blue, #1A1E42);
+font-family: Montserrat;
+font-size: 30px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+  }
+.crypto_wallet{
+    color: var(--Orange, #F7931A);
+font-family: Space Grotesk;
+font-size: 48px;
+font-style: normal;
+font-weight: 600;
+line-height: 56px;
+letter-spacing: -1.92px;
+}
+ 
+  p{
+    color: rgba(26, 30, 66, 0.80);
+
+font-family: Space Grotesk;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 26px; /* 144.444% */
+  }
+
+  .our_most{
+    color: var(--gray-400, #98A2B3);
+font-family: Space Grotesk;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 24px; /* 150% */
+  }
+  li{
+    color: var(--gray-400, #98A2B3);
+font-family: Space Grotesk;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 24px; /* 150% */
+}
+.why{
+    color: #FFF;
+
+font-family: Space Grotesk;
+font-size: 44px;
+font-style: normal;
+font-weight: 600;
+line-height: 52px; /* 118.182% */
+letter-spacing: -1.76px;
+}
+.we_had{
+    color: #D0D5DD;
+
+font-family: Space Grotesk;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 26px; /* 144.444% */
+}
+h3{
+    color: #FFF;
+
+font-family: Space Grotesk;
+font-size: 22px;
+font-style: normal;
+font-weight: 600;
+line-height: 30px; /* 136.364% */
+}
+  .base{
+    color: var(--gray-300, #D0D5DD);
+font-family: Space Grotesk;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px; /* 150% */
+  }
+  .About_us{
+    color: #1A1E42;
+
+font-family: Space Grotesk;
+font-size: 44px;
+font-style: normal;
+font-weight: 600;
+line-height: 52px; /* 118.182% */
+letter-spacing: -1.76px;
+  }
+
+  .Inter{
+    color: var(--gray-300, #D0D5DD);
+font-family: Inter;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 26px; /* 144.444% */
+  }
+  .nums{
+    color: #FFF;
+
+text-align: center;
+font-family: Inter;
+font-size: 20px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+  }
+  .grey_space{
+    color: var(--gray-500, #667085);
+font-family: Space Grotesk;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 26px; /* 144.444% */
+  }
+  h5{
+    color: var(--Dark-Blue, #1A1E42);
+font-family: Space Grotesk;
+font-size: 18px;
+font-style: normal;
+font-weight: 600;
+line-height: 26px; /* 144.444% */
+  }
+  .Bruno{
+    color: var(--gray-400, #98A2B3);
+font-family: Space Grotesk;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 24px; /* 150% */
+  }
+  .How_to{
+    color: var(--Dark-Blue, #1A1E42);
+font-family: Space Grotesk;
+font-size: 22px;
+font-style: normal;
+font-weight: 600;
+line-height: 30px; /* 136.364% */
+  }
+  .freq{
+    color: #1A1E42;
+
+text-align: center;
+font-family: Space Grotesk;
+font-size: 44px;
+font-style: normal;
+font-weight: 600;
+line-height: 52px; /* 118.182% */
+letter-spacing: -1.76px;
+  }
+  .can_u{
+    color: var(--Dark-Blue, #1A1E42);
+font-family: Space Grotesk;
+font-size: 22px;
+font-style: normal;
+font-weight: 500;
+line-height: 32px; /* 145.455% */
+  }
+  .start{
+    color: var(--Dark-Blue, #1A1E42);
+font-family: Space Grotesk;
+font-size: 44px;
+font-style: normal;
+font-weight: 600;
+line-height: 52px; /* 118.182% */
+letter-spacing: -1.76px;
+  }
+  .montserrat{
+    color: var(--Dark-Blue, #1A1E42);
+font-family: Montserrat;
+font-size: 30px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+  }
+  .bruno_sup{
+    color: var(--gray-600, #475467);
+font-family: Space Grotesk;
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+line-height: 24px; /* 150% */
+  }

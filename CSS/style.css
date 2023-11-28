@@ -1,20 +1,22 @@
-
+html {
+  font-size: 62.5%;
+}
 
 h1 {
   color: #1A1E42;
   font-family: Space Grotesk;
-  font-size: 48px;
+  font-size: 4.8rem;
   font-style: normal;
   font-weight: 600;
-  line-height: 56px;
+  line-height: 5.6rem;
   /* 116.667% */
-  letter-spacing: -1.92px;
+  letter-spacing: -0.192rem;
 }
 
 h2 {
   color: var(--Dark-Blue, #1A1E42);
   font-family: Montserrat;
-  font-size: 30px;
+  font-size: 3rem;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
@@ -23,41 +25,31 @@ h2 {
 .crypto_wallet {
   color: var(--Orange, #F7931A);
   font-family: Space Grotesk;
-  font-size: 48px;
+  font-size: 4.8rem;
   font-style: normal;
   font-weight: 600;
-  line-height: 56px;
-  letter-spacing: -1.92px;
+  line-height: 5.6rem;
+  letter-spacing: -0.192rem;
 }
 
 p {
   color: rgba(26, 30, 66, 0.80);
 
   font-family: Space Grotesk;
-  font-size: 18px;
+  font-size: 1.8rem;
   font-style: normal;
   font-weight: 400;
-  line-height: 26px;
+  line-height: 2.6rem;
   /* 144.444% */
 }
 
 .our_most {
   color: var(--gray-400, #98A2B3);
   font-family: Space Grotesk;
-  font-size: 16px;
+  font-size: 1.6rem;
   font-style: normal;
   font-weight: 500;
-  line-height: 24px;
-  /* 150% */
-}
-
-li {
-  color: var(--gray-400, #98A2B3);
-  font-family: Space Grotesk;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 24px;
+  line-height: 2.4rem;
   /* 150% */
 }
 
@@ -65,22 +57,22 @@ li {
   color: #FFF;
 
   font-family: Space Grotesk;
-  font-size: 44px;
+  font-size: 4.4rem;
   font-style: normal;
   font-weight: 600;
-  line-height: 52px;
+  line-height: 5.2rem;
   /* 118.182% */
-  letter-spacing: -1.76px;
+  letter-spacing: -0.176rem;
 }
 
 .we_had {
   color: #D0D5DD;
 
   font-family: Space Grotesk;
-  font-size: 18px;
+  font-size: 1.8rem;
   font-style: normal;
   font-weight: 400;
-  line-height: 26px;
+  line-height: 2.6rem;
   /* 144.444% */
 }
 
@@ -88,20 +80,20 @@ h3 {
   color: #FFF;
 
   font-family: Space Grotesk;
-  font-size: 22px;
+  font-size: 2.2rem;
   font-style: normal;
   font-weight: 600;
-  line-height: 30px;
+  line-height: 3rem;
   /* 136.364% */
 }
 
 .base {
   color: var(--gray-300, #D0D5DD);
   font-family: Space Grotesk;
-  font-size: 16px;
+  font-size: 1.6rem;
   font-style: normal;
   font-weight: 400;
-  line-height: 24px;
+  line-height: 2.4rem;
   /* 150% */
 }
 
@@ -109,21 +101,21 @@ h3 {
   color: #1A1E42;
 
   font-family: Space Grotesk;
-  font-size: 44px;
+  font-size: 4.4rem;
   font-style: normal;
   font-weight: 600;
-  line-height: 52px;
+  line-height: 5.2rem;
   /* 118.182% */
-  letter-spacing: -1.76px;
+  letter-spacing: -0.176rem;
 }
 
 .Inter {
   color: var(--gray-300, #D0D5DD);
   font-family: Inter;
-  font-size: 18px;
+  font-size: 1.8rem;
   font-style: normal;
   font-weight: 400;
-  line-height: 26px;
+  line-height: 2.6rem;
   /* 144.444% */
 }
 
@@ -132,7 +124,7 @@ h3 {
 
   text-align: center;
   font-family: Inter;
-  font-size: 20px;
+  font-size: 2rem;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
@@ -141,40 +133,40 @@ h3 {
 .grey_space {
   color: var(--gray-500, #667085);
   font-family: Space Grotesk;
-  font-size: 18px;
+  font-size: 1.8rem;
   font-style: normal;
   font-weight: 400;
-  line-height: 26px;
+  line-height: 2.6rem;
   /* 144.444% */
 }
 
 h5 {
   color: var(--Dark-Blue, #1A1E42);
   font-family: Space Grotesk;
-  font-size: 18px;
+  font-size: 1.8rem;
   font-style: normal;
   font-weight: 600;
-  line-height: 26px;
+  line-height: 2.6rem;
   /* 144.444% */
 }
 
 .Bruno {
   color: var(--gray-400, #98A2B3);
   font-family: Space Grotesk;
-  font-size: 16px;
+  font-size: 1.6rem;
   font-style: normal;
   font-weight: 500;
-  line-height: 24px;
+  line-height: 2.4rem;
   /* 150% */
 }
 
 .How_to {
   color: var(--Dark-Blue, #1A1E42);
   font-family: Space Grotesk;
-  font-size: 22px;
+  font-size: 2.2rem;
   font-style: normal;
   font-weight: 600;
-  line-height: 30px;
+  line-height: 3rem;
   /* 136.364% */
 }
 
@@ -183,39 +175,39 @@ h5 {
 
   text-align: center;
   font-family: Space Grotesk;
-  font-size: 44px;
+  font-size: 4.4rem;
   font-style: normal;
   font-weight: 600;
-  line-height: 52px;
+  line-height: 5.2rem;
   /* 118.182% */
-  letter-spacing: -1.76px;
+  letter-spacing: -0.176rem;
 }
 
 .can_u {
   color: var(--Dark-Blue, #1A1E42);
   font-family: Space Grotesk;
-  font-size: 22px;
+  font-size: 2.2rem;
   font-style: normal;
   font-weight: 500;
-  line-height: 32px;
+  line-height: 3.2rem;
   /* 145.455% */
 }
 
 .start {
   color: var(--Dark-Blue, #1A1E42);
   font-family: Space Grotesk;
-  font-size: 44px;
+  font-size: 4.4rem;
   font-style: normal;
   font-weight: 600;
-  line-height: 52px;
+  line-height: 5.2rem;
   /* 118.182% */
-  letter-spacing: -1.76px;
+  letter-spacing: -0.176rem;
 }
 
 .montserrat {
   color: var(--Dark-Blue, #1A1E42);
   font-family: Montserrat;
-  font-size: 30px;
+  font-size: 3rem;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
@@ -224,9 +216,9 @@ h5 {
 .bruno_sup {
   color: var(--gray-600, #475467);
   font-family: Space Grotesk;
-  font-size: 16px;
+  font-size: 1.6rem;
   font-style: normal;
   font-weight: 600;
-  line-height: 24px;
+  line-height: 2.4rem;
   /* 150% */
 }

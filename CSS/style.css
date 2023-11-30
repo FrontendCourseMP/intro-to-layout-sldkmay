@@ -1,4 +1,4 @@
-html {
+:root {
   font-size: 62.5%;
 }
 
@@ -22,14 +22,30 @@ h2 {
   line-height: normal;
 }
 
-.crypto_wallet {
-  color: var(--Orange, #F7931A);
+h3 {
+  color: #FFF;
+
   font-family: Space Grotesk;
-  font-size: 4.8rem;
+  font-size: 2.2rem;
   font-style: normal;
   font-weight: 600;
-  line-height: 5.6rem;
-  letter-spacing: -0.192rem;
+  line-height: 3rem;
+  /* 136.364% */
+}
+
+h5 {
+  color: var(--Dark-Blue, #1A1E42);
+  font-family: Space Grotesk;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 2.6rem;
+  /* 144.444% */
+}
+
+strong {
+  color: var(--Orange, #F7931A);
+ 
 }
 
 p {
@@ -76,16 +92,7 @@ p {
   /* 144.444% */
 }
 
-h3 {
-  color: #FFF;
 
-  font-family: Space Grotesk;
-  font-size: 2.2rem;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 3rem;
-  /* 136.364% */
-}
 
 .base {
   color: var(--gray-300, #D0D5DD);
@@ -140,15 +147,7 @@ h3 {
   /* 144.444% */
 }
 
-h5 {
-  color: var(--Dark-Blue, #1A1E42);
-  font-family: Space Grotesk;
-  font-size: 1.8rem;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 2.6rem;
-  /* 144.444% */
-}
+
 
 .Bruno {
   color: var(--gray-400, #98A2B3);
@@ -213,7 +212,7 @@ h5 {
   line-height: normal;
 }
 
-.bruno_sup {
+li {
   color: var(--gray-600, #475467);
   font-family: Space Grotesk;
   font-size: 1.6rem;

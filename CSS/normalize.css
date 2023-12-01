@@ -1,0 +1,22 @@
+.main_but{
+    display: flex;
+padding: 10px 24px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+align-self: stretch;
+border-radius: 4px;
+background: #F7931A;
+}
+
+header{
+    display: flex;
+    width: 390px;
+    padding: 18px 16px;
+    justify-content: space-between;
+    align-items: center;
+}
+.butt{
+    border: none;
+    background-color: inherit;
+}

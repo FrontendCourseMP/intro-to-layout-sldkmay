@@ -1,22 +1,35 @@
-.main_but{
-    display: flex;
-padding: 10px 24px;
-justify-content: center;
-align-items: center;
-gap: 10px;
-align-self: stretch;
-border-radius: 4px;
-background: #F7931A;
-}
-
-header{
+header {
     display: flex;
     width: 390px;
     padding: 18px 16px;
     justify-content: space-between;
     align-items: center;
 }
-.butt{
+
+footer {
+    background-color: var(--color-grey-100)
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.butt {
     border: none;
     background-color: inherit;
 }
+
+.main_but {
+    display: flex;
+    padding: 10px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+    border-radius: 4px;
+    background: var(--color-orange);
+}
+/*.whapper footer_bottom
+/*.whapper footer_top
+/*.whapper

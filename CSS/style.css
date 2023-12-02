@@ -1,6 +1,6 @@
 :root {
   font-size: 62.5%;
-  --color-dark-blue:#1a1e42;
+  --color-dark-blue: #1a1e42;
   --color-dark-blue-faded: rgb(26, 30, 66, 0.80);
   --color-orange: #F7931A;
   --color-white: #fff;
@@ -10,70 +10,108 @@
   --color-grey-100: #F2F4F7;
   --color-green: #00B67A;
 }
+
+/* space-grotesk-regular - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Space Grotesk';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./fonts/space-grotesk-v16-latin-regular.woff2') format('woff2');
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* space-grotesk-500 - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Space Grotesk';
+  font-style: normal;
+  font-weight: 500;
+  src: url('./fonts/space-grotesk-v16-latin-500.woff2') format('woff2');
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
 /* space-grotesk-600 - latin */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   font-family: 'Space Grotesk';
   font-style: normal;
   font-weight: 600;
-  src: url('../fonts/space-grotesk-v16-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}
-
-@font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 600;
-  src: url('../fonts/montserrat-v26-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('./fonts/space-grotesk-v16-latin-600.woff2') format('woff2');
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
 /* inter-regular - latin */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
-  src: url('../fonts/inter-v13-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('./fonts/inter-v13-latin-regular.woff2') format('woff2');
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
-body{
-  font-family:"Space Grotesk", sans-serif;
-  font-size: 1.5 rem;
+/* inter-600 - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  src: url('./fonts/inter-v13-latin-600.woff2') format('woff2');
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* montserrat-600 - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  src: url('./fonts/montserrat-v26-latin-600.woff2') format('woff2');
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+
+body {
+  font-family: Space Grotesk, sans-serif;
+  font-size: 1.5rem;
   background-color: var(--color-white);
 }
+
 p {
   color: var(--color-dark-blue-faded);
-  font-size: 1.5rem;
-  font-family: Space Grotesk;
+  font-size: 1.8rem;
   font-weight: 400;
   line-height: 2.6rem;
 }
 
-
 h1 {
   color: var(--color-dark-blue);
-  font-family: Space Grotesk;
   font-size: 4.8rem;
-  font-style: normal;
-  font-weight: 600;
   line-height: 5.6rem;
+  font-weight: 600;
   /* 116.667% */
   letter-spacing: -0.192rem;
 }
 
 h2 {
-  color: var(--color-Dark-Blue);
-  font-family: Montserrat;
-  font-size: 3rem;
+  color: var(--color-dark-blue);
+  font-size: 4.4rem;
   font-style: normal;
   font-weight: 600;
-  line-height: 4rem;
+  line-height: 5.2rem;
+  /* 118.182% */
+  letter-spacing: -0.176rem;
 }
 
 h3 {
-  color: var(--color-dark-blue);
-
-  font-family: Space Grotesk;
+  color: var(--color-white);
   font-size: 2.2rem;
   font-style: normal;
   font-weight: 600;
@@ -81,9 +119,18 @@ h3 {
   /* 136.364% */
 }
 
+.how_to {
+  color: var(--color-dark-blue);
+}
+
+.your_cont {
+  color: var(--color-grey-300);
+  line-height: 3rem;
+}
+
+
 h5 {
   color: var(--color-dark-blue);
-  font-family: Space Grotesk;
   font-size: 1.8rem;
   font-style: normal;
   font-weight: 600;
@@ -93,68 +140,40 @@ h5 {
 
 strong {
   color: var(--color-orange);
- 
+
 }
 
 .our_most {
-  color: var(--gray-400, #98A2B3);
-  font-family: Space Grotesk;
+  color: var(--color-grey-400);
   font-size: 1.6rem;
   font-style: normal;
   font-weight: 500;
-  line-height: 2.4rem;
   /* 150% */
 }
 
 .why {
-  color: #FFF;
-
-  font-family: Space Grotesk;
-  font-size: 4.4rem;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 5.2rem;
-  /* 118.182% */
-  letter-spacing: -0.176rem;
+  color: var(--color-white);
 }
 
 .we_had {
-  color: #D0D5DD;
-
-  font-family: Space Grotesk;
-  font-size: 1.8rem;
+  color: var(--color-grey-300);
   font-style: normal;
   font-weight: 400;
-  line-height: 2.6rem;
   /* 144.444% */
 }
 
 
 
 .base {
-  color: var(--gray-300, #D0D5DD);
-  font-family: Space Grotesk;
+  color: var(--color-grey-300);
   font-size: 1.6rem;
   font-style: normal;
-  font-weight: 400;
   line-height: 2.4rem;
   /* 150% */
 }
 
-.About_us {
-  color: #1A1E42;
-
-  font-family: Space Grotesk;
-  font-size: 4.4rem;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 5.2rem;
-  /* 118.182% */
-  letter-spacing: -0.176rem;
-}
-
 .Inter {
-  color: var(--gray-300, #D0D5DD);
+  color: var(--color-gray-300);
   font-family: Inter;
   font-size: 1.8rem;
   font-style: normal;
@@ -164,7 +183,7 @@ strong {
 }
 
 ol {
-  color: #FFF;
+  color: var(--color-white);
 
   text-align: center;
   font-family: Inter;
@@ -174,9 +193,8 @@ ol {
   line-height: normal;
 }
 
-.grey_space {
-  color: var(--gray-500, #667085);
-  font-family: Space Grotesk;
+blockquote {
+  color: var(--color-grey-500);
   font-size: 1.8rem;
   font-style: normal;
   font-weight: 400;
@@ -186,9 +204,8 @@ ol {
 
 
 
-.Bruno {
-  color: var(--gray-400, #98A2B3);
-  font-family: Space Grotesk;
+figcaption {
+  color: var(--color-grey-400);
   font-size: 1.6rem;
   font-style: normal;
   font-weight: 500;
@@ -196,48 +213,17 @@ ol {
   /* 150% */
 }
 
-.How_to {
-  color: var(--Dark-Blue, #1A1E42);
-  font-family: Space Grotesk;
-  font-size: 2.2rem;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 3rem;
-  /* 136.364% */
-}
-
 .freq {
-  color: #1A1E42;
-
   text-align: center;
-  font-family: Space Grotesk;
-  font-size: 4.4rem;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 5.2rem;
-  /* 118.182% */
-  letter-spacing: -0.176rem;
 }
 
-.can_u {
+summary {
   color: var(--color-dark-Blue);
-  font-family: Space Grotesk;
   font-size: 2.2rem;
   font-style: normal;
   font-weight: 500;
   line-height: 3.2rem;
   /* 145.455% */
-}
-
-.start {
-  color: var(--color-dark-blue) ;
-  font-family: Space Grotesk;
-  font-size: 4.4rem;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 5.2rem;
-  /* 118.182% */
-  letter-spacing: -0.176rem;
 }
 
 .montserrat {
@@ -251,18 +237,9 @@ ol {
 
 li {
   color: var(--color-grey-500);
-  font-family: Space Grotesk;
   font-size: 1.6rem;
   font-style: normal;
   font-weight: 600;
   line-height: 2.4rem;
   /* 150% */
-}
-
-footer{
-  background-color: var(--color-grey-100)
-}
-a {
-  text-decoration: none;
-  color: inherit;
 }

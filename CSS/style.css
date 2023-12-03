@@ -77,11 +77,15 @@
   /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
+* {
+  box-sizing: border-box;
+}
 
 body {
   font-family: Space Grotesk, sans-serif;
   font-size: 1.5rem;
   background-color: var(--color-white);
+  margin: 0;
 }
 
 p {
@@ -243,3 +247,27 @@ li {
   line-height: 2.4rem;
   /* 150% */
 }
+ul,
+ol {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+/*1 section layout */
+.layout h1 {
+  display: hidden;
+}
+/*2 section tool cards */
+
+/*3 section About_us */
+/*4 section the_proccess */
+/*5 section our_promise */
+/*6 section Testimonials */
+/*7 section Rewallet_blog */
+/*8 section Frequently */
+/*9 section Start_now */

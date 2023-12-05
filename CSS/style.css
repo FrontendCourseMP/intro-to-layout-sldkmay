@@ -104,6 +104,7 @@ h1 {
   font-weight: 600;
   /* 116.667% */
   letter-spacing: -0.192rem;
+  margin: 5px;
 }
 
 h2 {
@@ -208,8 +209,6 @@ blockquote {
   /* 144.444% */
 }
 
-
-
 figcaption {
   color: var(--color-grey-400);
   font-size: 1.6rem;
@@ -249,6 +248,7 @@ li {
   line-height: 2.4rem;
   /* 150% */
 }
+
 ul,
 ol {
   list-style-type: none;
@@ -260,26 +260,27 @@ a {
   text-decoration: none;
   color: inherit;
 }
+
 /*1 section layout */
 .layout {
   justify-content: space-around;
 }
+
 .wrapper_1 {
   margin: 0 auto;
   max-width: 45rem;
   max-height: 120rem;
   overflow: hidden;
 }
-/*2 sectinon*/
-/*.tool_cards {
-  justify-content: space-around;
-    background-color: #f9fafb;
-    margin: 0 auto;
-    max-width: 45rem;
-    max-height: 120rem;
-    overflow: hidden; 
 
-}*/
+/*2 sectinon*/
+.tool_cards {
+  justify-content: space-around;
+  background-color: #1A1E42;
+  margin: 0 auto;
+  overflow: hidden;
+
+}
 
 /*3 section About_us */
 /*4 section the_proccess */

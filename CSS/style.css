@@ -104,7 +104,7 @@ h1 {
   font-weight: 600;
   /* 116.667% */
   letter-spacing: -0.192rem;
-  margin: 5px;
+  margin: 0 0 8px 0;
 }
 
 h2 {
@@ -281,6 +281,25 @@ a {
   overflow: hidden;
 
 }
+
+.second_list {
+  display: flex;
+  justify-content: space-between;
+  gap: 4rem;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.my_butt {
+  color: var(--color-white);
+  font-family: Space Grotesk;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 2.8rem;
+}
+
 
 /*3 section About_us */
 /*4 section the_proccess */

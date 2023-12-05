@@ -85,7 +85,9 @@ body {
   font-family: Space Grotesk, sans-serif;
   font-size: 1.5rem;
   background-color: var(--color-white);
+  align-content: center;
   margin: 0;
+  padding: 0;
 }
 
 p {
@@ -259,10 +261,25 @@ a {
   color: inherit;
 }
 /*1 section layout */
-.layout h1 {
-  display: hidden;
+.layout {
+  justify-content: space-around;
 }
-/*2 section tool cards */
+.wrapper_1 {
+  margin: 0 auto;
+  max-width: 45rem;
+  max-height: 120rem;
+  overflow: hidden;
+}
+/*2 sectinon*/
+/*.tool_cards {
+  justify-content: space-around;
+    background-color: #f9fafb;
+    margin: 0 auto;
+    max-width: 45rem;
+    max-height: 120rem;
+    overflow: hidden; 
+
+}*/
 
 /*3 section About_us */
 /*4 section the_proccess */

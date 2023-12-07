@@ -1,143 +1,62 @@
-html {
-  margin-left: 0;
-}
+.choseblock {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--darkblue-color);
+    padding-top: 2rem;
+    padding-bottom: 3.2rem;
+    border-radius: 0.5rem;
+    max-width: 34rem;
+    margin: 4.6rem auto 1rem;
+  }
 
-.boxes {
-  padding: 4rem 1.5rem;
-  max-width: 1280px;
-  margin: 0 auto;
-}
+  .steps_chose {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    margin-bottom: 1.5rem;
+  }
 
-.wrapper_header {
+  .stepper {
+    list-style: none;
+  }
 
-  padding: 1.8rem 1.6rem;
-  max-width: 1280px;
-  margin: 0 auto;
-}
+  .stepper_line img {
+    max-width: 4.8rem;
+  }
+  .head3-white {
+    font-family: Space-Semi, sans-serif;
+    color: var(--white);
+    font-size: 2.2rem;
+    line-height: 3rem;
+  }
 
-.bigy_wallet {
-  width: 390px;
-  height: 390px;
-  flex-shrink: 0;
-}
+  .head3 {
+    color: var(--darkblue-color);
+    font-size: 1.375rem;
+    line-height: 1.875rem;
+  }
 
-.bigy_wallet_closed {
-  width: 390px;
-  height: 396px;
-}
+  .shosewallets {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    gap: 1.2rem;
+    margin-top: 4rem;
+  }
+  .chosewallet {
+    background-color: var(--white);
+    list-style: none;
+    width: 20rem;
+    border-radius: 0.5rem;
+    padding: 1.6rem;
+  }
 
-header {
-  position: sticky;
-  z-index: 100;
-  top: 0;
-  background-color: white;
-  padding: 0;
-}
+  .bastian {
+    display: flex;
+    justify-content: start;
 
-footer {
-  background-color: var(--color-grey-100);
-  position: sticky;
-  top: 1100px;
-}
-
-
-
-.butt {
-  border: none;
-  background-color: inherit;
-}
-
-.main_but {
-  display: flex;
-  padding: 10px 24px;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  align-self: stretch;
-  border-radius: 4px;
-  background: var(--color-orange);
-  margin: 32px 10px;
-}
-
-.footer_top nav {
-  color: #475467;
-  font-weight: 600;
-  line-height: 24px;
-}
-
-/*.whapper footer_bottom
-/*.whapper footer_top
-/*.whapper */
-.wrapper {
-  max-width: 1280px;
-  padding: 1.8rem 1.6rem;
-  position: relative;
-}
-
-.line {
-  width: 3rem;
-  height: 0.125rem;
-  background-color: var(--orange-color);
-}
-
-.list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.8rem;
-  margin: 1.6rem 0;
-  max-width: 54.2rem;
-}
-
-.scope {
-  max-width: 17rem;
-}
-
-.scope_2 {
-  max-width: 17rem;
-  min-width: 16rem;
-}
-
-.element {
-  list-style: none;
-}
-
-.toolkit_section {
-  display: flex;
-  padding: 32px;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 12px;
-  align-self: stretch;
-  border-radius: 8px;
-  background: #2A2D51;
-}
-
-.toolkit_area {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 24px;
-  align-self: stretch;
-  margin: 48px 16px;
-
-}
-.why_not {
-  margin: 16px 0 12px 0;
-
-}
-.line {
-  width: 48px;
-  height: 2px;
-  background-color:var(--color-orange)
-}
-.paddon {
-  margin-top: 12px;
-  margin-bottom: 0;
-
-}
-.margin_zero {
-  margin: 0 auto;
-}
-.sixteen {
-  margin:16px 0 16px 0;
-}
+    max-width: 22rem;
+    max-height: 22rem;
+    border-radius: 0.8rem;
+  }

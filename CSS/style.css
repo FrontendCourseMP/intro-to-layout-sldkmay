@@ -194,7 +194,7 @@ strong {
 }
 
 .phone_mail {
-  color: var(--color-gray-300);
+  color: var(--color-grey-300);
   font-size: 2.2rem;
   font-style: normal;
   font-weight: 600;
@@ -570,9 +570,9 @@ toolkit_area li {
   margin: 24px 0 24px 0px;
 }
 
-.gappi {
+/*.gappi {
   line-gap-override: 10px;
-}
+} */
 
 .one_and_half {
   margin-top: 32px;
@@ -605,5 +605,5 @@ toolkit_area li {
 flex-direction: column;
 justify-content: center;
 align-items: flex-start;
-gap: 16px;
+gap: 1.6rem;
 }

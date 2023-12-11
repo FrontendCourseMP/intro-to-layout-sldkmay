@@ -126,6 +126,7 @@ h3 {
   font-style: normal;
   font-weight: 600;
   line-height: 3rem;
+  margin: 0;
   /* 136.364% */
 }
 
@@ -184,7 +185,7 @@ strong {
 }
 
 .Inter {
-  color: var(--color-gray-300);
+  color: var(--color-grey-300);
   font-family: Inter;
   font-size: 1.8rem;
   font-style: normal;
@@ -203,15 +204,31 @@ strong {
 
 }
 
-ol {
-  color: var(--color-white);
+.marg-8 {
+  margin-top: -8px;
+  margin-bottom: 0;
+}
 
-  text-align: center;
+ol {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  align-self: stretch;
+  color: var(--color-white);
   font-family: Inter;
   font-size: 2rem;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
+}
+
+ol li {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2rem;
+  align-self: stretch;
 }
 
 blockquote {
@@ -246,7 +263,7 @@ summary {
 }
 
 .montserrat {
-  color: var(--Dark-Blue, #1A1E42);
+  color: var(--color-dark-Blue);
   font-family: Montserrat;
   font-size: 3rem;
   font-style: normal;
@@ -261,6 +278,15 @@ li {
   font-weight: 600;
   line-height: 2.4rem;
   /* 150% */
+}
+
+#four_nine {
+  color: var(--Dark-Blue, #1A1E42);
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: 0.5rem;
 }
 
 ul,
@@ -281,13 +307,15 @@ a {
 }
 
 .layout_2 {
+  display: flex;
   justify-content: space-around;
-  background: var(--color-gray-50);
+  background: var(--color-grey-50);
 }
+
 /*2 sectinon*/
 .tool_cards {
   justify-content: space-around;
-  background-color: #1A1E42;
+  background-color: var(--color-dark-blue);
   margin: 0 auto;
   overflow: hidden;
 
@@ -333,9 +361,12 @@ a {
 
 
 /*3 section 
-.About_us {
-} */
-/*4 section the_proccess */
+.About_us */
+/*4 section */
+.the_proccess {
+  background-color: var(--color-dark-blue);
+}
+
 /*5 section our_promise */
 
 /*7 section Rewallet_blog */
@@ -358,16 +389,22 @@ html {
 }
 
 .wrapper_footer {
-  padding: 6rem 1.6rem;
+  padding: 3.2rem 1.6rem;
   max-width: 1280px;
   margin: 0 auto;
 }
 
 .wrapper_header {
-
+  display: flex;
   padding: 1.8rem 1.6rem;
   max-width: 1280px;
   margin: 0 auto;
+  justify-content: space-between;
+
+}
+
+.grey_back {
+  background-color: var(--color-grey-50);
 }
 
 .bigy_wallet {
@@ -399,7 +436,9 @@ footer {
   position: sticky;
   top: 1100px;
 }
-
+.footy_wall {
+  margin-bottom: 2.4rem;
+}
 
 
 .butt {
@@ -413,7 +452,7 @@ footer {
   padding: 1rem 2.4rem;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  gap: 1rem;
   align-self: stretch;
   border-radius: 0.4rem;
   background: var(--color-orange);
@@ -422,13 +461,21 @@ footer {
   margin-right: auto;
 }
 
-.footer_top nav {
-  color: #475467;
-  font-weight: 600;
-  line-height: 24px;
+.footer_bottom {
+  display: flex;
+  padding-top: 3.2rem;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  align-self: stretch;
 }
 
-/*.whapper footer_bottom
+.logo_german {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+
 /*.whapper footer_top
 /*.whapper */
 /*.wrapper {
@@ -459,13 +506,13 @@ footer {
 .element {
   list-style: none;
   display: flex;
-  width: 170px;
+  width: 17rem;
   align-items: center;
-  gap: 8px;
+  gap: 0.8rem;
 }
 
 .toolkit_section {
-  min-height: 262px;
+  min-height: 26.2rem;
   list-style: none;
   background-color: var(--section-dark-blue);
   border-radius: 0.5rem;
@@ -511,7 +558,7 @@ toolkit_area li {
 }
 
 .paddon {
-  margin-top: 12px;
+  margin-top: 1.2rem;
   margin-bottom: 0;
 
 }
@@ -519,6 +566,7 @@ toolkit_area li {
 .margin_zero {
   margin: 0 auto;
 }
+
 .margin_0 {
   margin: 0;
 }
@@ -531,14 +579,14 @@ toolkit_area li {
 .green_but {
   max-width: 33.4rem;
   display: flex;
-  padding: 10px 24px;
+  padding: 1rem 2.4rem;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  gap: 1rem;
   align-self: stretch;
-  border-radius: 4px;
+  border-radius: 0.4rem;
   background: var(--color-green);
-  margin: 32px 10px;
+  margin: 3.2rem 1rem;
 }
 
 .testemon {
@@ -547,27 +595,27 @@ toolkit_area li {
 
 .comments {
   display: flex;
-  max-width: 700px;
-  padding: 24px;
+  max-width: 70rem;
+  padding: 2.4rem;
   flex-direction: column;
   align-items: flex-start;
-  gap: 24px;
+  gap: 2.4rem;
   align-self: stretch;
   border-radius: 8px;
   background: #FFF;
 
   /* sh small */
-  box-shadow: 0px 12px 16px -4px rgba(16, 24, 40, 0.05);
+  box-shadow: 0px 1.2rem 1.6rem -0.4rem rgba(16, 24, 40, 0.05);
 }
 
 .get_in {
-  padding: 32px 24px;
-  border-radius: 8px;
-  background: #1A1E42;
+  padding: 3.2rem 2.4rem;
+  border-radius: 0.8rem;
+  background: var(--color-dark-blue);
 }
 
 .mail_gap {
-  margin: 24px 0 24px 0px;
+  margin: 2.4rem 0 2.4rem 0;
 }
 
 /*.gappi {
@@ -575,35 +623,106 @@ toolkit_area li {
 } */
 
 .one_and_half {
-  margin-top: 32px;
-  margin-bottom: 16px;
+  margin-top: 3.2rem;
+  margin-bottom: 1.6rem;
 }
 
 .gall_set {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 16px;
+  gap: 1.6rem;
   align-self: stretch;
 }
 
 .gall {
   display: flex;
   align-items: flex-start;
-  gap: 12px;
+  gap: 1.2rem;
   align-self: stretch;
 }
+
 .start_now {
   margin-top: 1.2rem;
   margin-bottom: 1.6rem;
 }
+
 .margin_32bottom {
   margin-bottom: 3.2rem;
 }
+
 .com_trading {
   display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: flex-start;
-gap: 1.6rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1.6rem;
+}
+
+.About_ass {
+  margin: 1.2rem 0 3.2rem 0;
+}
+
+.positivity {
+  margin-bottom: 1.6rem
+}
+
+.reading {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.our_down {
+  margin-top: 1.2rem;
+  margin-bottom: 1.6rem;
+}
+
+.num_conteiner {
+  max-width: 4.6rem;
+  display: flex;
+  padding: 1.2rem 1rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  border-radius: 0.8rem;
+  background: var(--section-dark-blue);
+  color: var(--color-white);
+  text-align: center;
+  font-family: Inter;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.Just_fill {
+  margin-bottom: 4rem;
+  margin-top: 0;
+}
+
+.footer_nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1.6rem;
+  align-self: stretch;
+}
+
+.gold_stars {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.margin_star {
+  margin-right: -0.5rem;
+}
+
+.imprint {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
 }

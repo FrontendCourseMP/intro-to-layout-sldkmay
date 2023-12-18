@@ -5,7 +5,7 @@
   --color-orange: #F7931A;
   --color-white: #fff;
   --color-grey-500: #667085;
-  --color-grey-400: #98A2B3;
+  --color-grey-400: #515151;
   --color-grey-300: #D0D5DD;
   --color-grey-100: #F2F4F7;
   --color-green: #00B67A;
@@ -353,6 +353,12 @@ a {
   margin-right: auto;
 }
 
+
+.wided {
+  max-width: 616px;
+  margin-bottom: 32px;
+}
+
 .my_butt {
   color: var(--color-white);
   font-family: Space Grotesk;
@@ -657,6 +663,11 @@ toolkit_area li {
   max-width: 50%;
 }
 
+#arrow_up {
+  margin-right: auto;
+  margin-left: 0;
+}
+
 .one_and_half {
   margin: 0;
   color: var(--color-white);
@@ -675,11 +686,11 @@ toolkit_area li {
   align-items: flex-start;
   gap: 1.2rem;
   align-self: stretch;
+  margin: 0;
 }
 
-.start_now {
-  margin-top: 1.2rem;
-  margin-bottom: 1.6rem;
+.start_w {
+  margin: 12px 0 16px 0;
 }
 
 .margin_32bottom {
@@ -736,6 +747,12 @@ toolkit_area li {
   font-style: normal;
   font-weight: 600;
   line-height: normal;
+}
+
+.st_now_wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
 }
 
 .Just_fill {
@@ -882,11 +899,18 @@ figure figcaption span {
 }
 
 .lg-hidden {
-  display: initial;
+  display: unset;
 }
 
+.sm_hidden {
+  display: none;
+}
 
 @media screen and (min-width: 1000px) {
+  .sm-hidden {
+    display: initial;
+  }
+
   .first_section {
     display: flex;
   }
@@ -945,6 +969,8 @@ figure figcaption span {
 
   .header__buttons {
     display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
     gap: 32px;
     justify-content: space-between;
     align-items: center
@@ -957,14 +983,13 @@ figure figcaption span {
     background-color: transparent;
   }
 
-  .header__buttons button:firts-of-type {
+  .header__buttons button:first-of-type {
     display: flex;
     align-items: center;
     gap: 4px;
   }
 
   .header__buttons button:first-of-type span {
-
     color: var(--color-grey-500);
     font-size: 1.6rem;
     font-style: normal;
@@ -1012,7 +1037,6 @@ figure figcaption span {
     flex-direction: row;
     margin-left: auto;
     margin-right: auto;
-
   }
 
   .photo_item {
@@ -1078,6 +1102,7 @@ figure figcaption span {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
+    gap: 32px;
   }
 
   .get_in div {
@@ -1146,9 +1171,7 @@ figure figcaption span {
     display: unset !important;
   }
 
-  .sm-hidden {
-    display: initial;
-  }
+
 
   .gold_stars {
     width: 170px;
@@ -1174,5 +1197,11 @@ figure figcaption span {
   .lg-hidden {
     display: none;
   }
+
+  .st_now_wrapper {
+    display: flex;
+    flex-direction: row;
+  }
+
 
 }

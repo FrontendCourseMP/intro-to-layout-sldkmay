@@ -5,7 +5,7 @@ main {
   padding: 100px 0;
 }
 
-.sec-pain {
+.sec-paint {
   padding: 0 calc(50% - 150px);
 }
 
@@ -26,7 +26,7 @@ main {
 }
 
 .s1 {
-  grid-column: span 2 / span 2;
+  grid-column: span 2;
   background-color: blue;
 }
 
@@ -46,23 +46,23 @@ main {
 }
 
 .s5 {
-  grid-column: span 2 / span 2;
+  grid-column: span 2;
   background-color: black;
 }
 
 .s6 {
-  grid-column: span 2 / span 2;
+  grid-column: span 2;
   background-color: red;
 }
 
 .s7 {
-  grid-row: span 2 / span 2;
-  background-color: #fff;
+  grid-row: span 2;
+  background-color: #1d8222;
 }
 
 .s8 {
-  grid-column: span 2 / span 2;
-  background-color:
+  grid-column: span 2;
+  background-color: #d86f0d
 }
 
 .s9 {
@@ -103,7 +103,7 @@ main {
 
 .graphs {
   display: grid;
-  margin: 100px;
+  margin: 100px auto;
   width: 720px;
   height: 720px;
   grid-template-areas:
@@ -115,13 +115,13 @@ main {
   grid-template-columns: 200px repeat (6, 70px);
   grid-template-rows: repeat(3, 200px);
   gap: 10px 10px;
-  place-items: center;
+  justify-content: space-around;
+  align-items: center;
   border: 3px solid black;
   overflow: hidden;
 }
 
 .graphs>div:first-of-type {
-  height: 3fr;
   padding: 15px;
   padding-right: none;
 }
@@ -138,6 +138,15 @@ main {
   fill: black !important;
 }
 
+.sidebar {
+  grid-area: sidebar;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: var(--color-green);
+  border-radius: 10px;
+}
+
 .sidebar>a {
   color: var(--color-orange);
   margin: 10px 0;
@@ -147,11 +156,11 @@ main {
   grid-area: graphxl;
 }
 
-.graphs1 {
+.graphsm1 {
   grid-area: graphsm1;
 }
 
-.graphs2 {
+.graphsm2 {
   grid-area: graphsm2;
 }
 

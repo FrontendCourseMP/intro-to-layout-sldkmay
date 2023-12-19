@@ -4,3 +4,121 @@ body {
     min-height: 100vh;
     justify-content: start;
 }
+
+.drop {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.fir_but {
+    padding: 2rem;
+    width: 49%;
+    height: unset;
+    margin: 0;
+    background: rgb(119, 0, 109);
+    color: #fff;
+}
+
+.sec_but {
+    padding: 2rem;
+    width: 49%;
+    height: unset;
+    margin: 0;
+    background: rgb(1, 126, 38);
+    color: #fff;
+}
+
+.palce {
+    height: unset;
+    margin: 10rem 30rem;
+    text-align: center;
+    font-size: 2.6rem;
+}
+
+main {
+    background: var(--background-secondary);
+}
+
+main fieldset,
+main form button {
+    border-radius: 12px;
+}
+
+main form * {
+    margin: 3px 6px;
+}
+
+input:not([type="radio"]),
+select {
+    padding: 5px
+}
+
+.fotty_wall:hover {
+    width: 9.5rem;
+    transform: rotate(30deg) scale(1.5) skew(20deg);
+    transition: transform 300ms;
+}
+
+input:focus+label {
+    width: 9.5rem;
+    transform: rotate(30deg) scale(1.5) skew(20deg);
+    transition: transform 300ms;
+}
+
+input:focus+label {
+    color: green !important;
+    border-radius: 4px;
+    transition: border 300ms;
+}
+
+input[type="radio"]:focus+label {
+    font-weight: 600;
+}
+
+input[required]+label {
+    color: red;
+}
+
+dt::first-letter {
+    font-size: 3rem;
+    color: red;
+    font-weight: 700;
+}
+
+dd::after {
+    content: "🛈";
+}
+
+form {
+    margin: 20rem 30rem 10rem 30rem;
+    font-size: 2.2rem;
+    height: unset;
+    font-weight: 500;
+}
+
+main form:last-of-type ul {
+    display: flex;
+    flex-basis: fill;
+    flex-wrap: wrap;
+}
+
+main form:last-of-type label {
+    text-align: right;
+    display: block;
+    width: 40%;
+    border-bottom: 2px solid brown;
+}
+
+main form:last-of-type input {
+    display: block;
+    width: 40%;
+}
+
+main form:last-of-type label:nth-of-type(even) {
+    color: rgb(8, 8, 110);
+}
+
+main form:last-of-type label:nth-of-type(odd) {
+    color: rgb(11, 161, 166);
+}

@@ -1,3 +1,14 @@
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: center
+}
+
+footer {
+  justify-self: end;
+}
+
 main {
   display: flex;
   align-content: center;
@@ -6,7 +17,7 @@ main {
 }
 
 .sec-paint {
-  padding: 0 calc(50% - 150px);
+  margin: auto;
 }
 
 .painting {
@@ -32,7 +43,7 @@ main {
 
 .s2 {
   column-span: 1;
-  background-color: green;
+  background-color: rgb(194, 90, 6);
 }
 
 .s3 {
@@ -62,7 +73,7 @@ main {
 
 .s8 {
   grid-column: span 2;
-  background-color: #d86f0d
+  background-color: #8f8d8c
 }
 
 .s9 {

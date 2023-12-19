@@ -6,6 +6,7 @@
     <title>Формы</title>
     <link rel="stylesheet" href="/CSS/normalize.css" />
     <link rel="stylesheet" href="/CSS/style.css" />
+    <link rel="stylesheet" href="/CSS/form.css"
   </head>
   <body>
     <header>
@@ -69,6 +70,8 @@
         <form method="POST" action="//httpbin.org/post">
             <fieldset>
                 <legend>Регистрация нового пользователя</legend>
+                <fieldset>
+                  <legend>Личные данные</legend>
                 <span>Ваш Пол:</span>
                 <input type="radio" name="sex" id="woman" value="woman"/><label>
                     Женский
@@ -76,6 +79,139 @@
                 <input type="radio" name="sex" id="man" value="man"/><label>
                     Мужской
                 </label>
+                <div class="transparent">
+                  <input required type="text" id="name" placeholder="Имя" >
+                  <label for="name">Ваше Имя</label>
+                </div>
+                <div class="transparent">
+                  <input type="date" name="birth" id="birth">
+                  <label for="birth">Дата рождения</label>
+                </div>
+                <div class="transparent">
+                  <input 
+                    maxlength="50" 
+                    minlength="8" 
+                    required type="password"
+                    name="password"
+                    id="password"
+                  >
+                  <label for="password">Введите пароль*(от 8 до 50 символов)</label>
+                </div>
+              </fieldset>
+              <fieldset>
+                <legend>Контактные данные
+                </legend>
+                <div class="transparent">
+                  <input
+                    required
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="info@example.com"
+                    ><label for="email">Введите ваш email</label>
+                </div>
+                <div class="transparent">
+                  <input
+                    placeholder="+7 (991) 170-59-00"
+                    maxlength="14"
+                    minlength="10"
+                    type="tel"
+                    name="phone"
+                    id="phone"
+                    >
+                    <label for="phone">Введите ваш номер телефона</label>
+                </div>
+                <div class="transparent">
+                <select name="datetime" id="daytime">
+                  <option value="1">Утро</option>
+                  <option selected value="4">День</option>
+                  <option value="2">Вечер</option>
+                  <option value="3">Ночь</option>
+                </select>
+                <span>Удобный интервал для связи</span>
+                </div>
+              </fieldset>
+              <div class="transparent drop">
+                <button class="fir_but" type="reset">
+                  Сбросить
+                </button>
+                <button class="sec_but" type="submit">
+                  Отправить
+                </button>
+              </div>
+            </fieldset>
+        </form>
+        <form class="palce" action="//httpbin.org/post">
+          <dl>
+            <dt>Pseudoelement</dt>
+            <dd>
+              Is a keyword added to a selector that lets you style a specific part
+              of the selected element(s).
+            </dd>
+            <dt>Pseudoclass</dt>
+            <dd>
+              Is a selector that selects elements that are in a specific state,
+              e.g. they are the first element of their type, or they are being
+              hovered over by the mouse pointer.
+            </dd>
+          </dl>
+          <ul>
+            <input checked id="9801" type="checkbox"><label for="9801">
+              :active
+            </label>
+            <input id="9802" type="checkbox"><label for="9802">:any</label>
+            <input id="9803" type="checkbox"><label for="9803">:any-link</label>
+            <input id="9804" type="checkbox"><label for="9804">:checked</label>
+            <input id="9805" type="checkbox"><label for="9805">:default</label>
+            <input id="9806" type="checkbox"><label for="9806">:defined</label>
+            <input id="9807" type="checkbox"><label for="9807">:dir()</label>
+            <input id="9808" type="checkbox"><label for="9808">:disabled</label>
+            <input id="9809" type="checkbox"><label for="9809">:empty</label>
+            <input id="98010" type="checkbox"><label for="98010">:enabled</label>
+            <input id="98011" type="checkbox"><label for="98011">:first</label>
+            <input id="98012" type="checkbox"><label for="98012">:first-child</label>
+            <input id="98013" type="checkbox"><label for="98013">:first-of-type</label>
+            <input id="98014" type="checkbox"><label for="98014">:fullscreen</label>
+            <input id="98015" type="checkbox"><label for="98015">:focus</label>
+            <input id="98016" type="checkbox"><label for="98016">:hover</label>
+            <input id="98017" type="checkbox"><label for="98017">:indeterminate</label>
+            <input id="98018" type="checkbox"><label for="98018">:in-range</label>
+            <input id="98019" type="checkbox"><label for="98019">:Invalid</label>
+            <input id="98020" type="checkbox"><label for="98020">:lang()</label>
+            <input id="98021" type="checkbox"><label for="98021">:last-child</label>
+            <input id="98022" type="checkbox"><label for="98022">:last-of-type</label>
+            <input id="98023" type="checkbox"><label for="98023">:left</label>
+            <input id="98024" type="checkbox"><label for="98024">:link</label>
+            <input id="98025" type="checkbox"><label for="98025">:not()</label>
+            <input id="98026" type="checkbox"><label for="98026">:nth-child</label>
+            <input id="a1" type="checkbox"><label for="a1">:nth-last-child</label>
+            <input id="a2" type="checkbox"><label for="a2">:nth-last-of-type()</label>
+            <input checked id="a3" type="checkbox"><label for="a3">:nth-of-type()</label>
+            <input id="a4" type="checkbox"><label for="a4">:only-child</label>
+            <input id="a5" type="checkbox"><label for="a5">:only-of-type</label>
+            <input id="a6" type="checkbox"><label for="a6">:optional</label>
+            <input id="a7" type="checkbox"><label for="a7">:out-of-range</label>
+            <input id="a8" type="checkbox"><label for="a8">:read-only</label>
+            <input id="a9" type="checkbox"><label for="a9">:read-write</label>
+            <input checked id="a10" type="checkbox"><label for="a10">:required</label>
+            <input id="a11" type="checkbox"><label for="a11">:right</label>
+            <input checked id="a12" type="checkbox"><label for="a12">:root</label>
+            <input id="a13" type="checkbox"><label for="a13">:scope</label>
+            <input id="a14" type="checkbox"><label for="a14">:target</label>
+            <input id="a15" type="checkbox"><label for="a15">:valid</label>
+            <input  checked id="a16" type="checkbox"><label for="a16">:visited</label>
+
+          </ul>
+          <ul>
+            <input checked id="b1" type="checkbox"><label for="b1">::after</label>
+            <input checked id="b2" type="checkbox"><label for="b2">::before</label>
+            <input checked id="b3" type="checkbox"><label for="b3">::first-letter</label>
+            <input id="b4" type="checkbox"><label for="b4">::first-line</label>
+            <input id="b5" type="checkbox"><label for="b5">::grammar-error</label>
+            <input id="b6" type="checkbox"><label for="b6">::marker</label>
+            <input checked id="b7" type="checkbox"><label for="b7">::selection</label>
+            <input id="b8" type="checkbox"><label for="b8">::spelling-error</label>
+          </ul>
         </form>
     </main>
     <footer>

@@ -61,8 +61,8 @@ select {
 }
 
 input:focus+label {
-    width: 9.5rem;
-    transform: rotate(30deg) scale(1.5) skew(20deg);
+    /* width: 9.5rem; */
+    /* transform: rotate(30deg) scale(1.5) skew(20deg); */
     transition: transform 300ms;
 }
 
@@ -101,24 +101,33 @@ main form:last-of-type ul {
     display: flex;
     flex-basis: fill;
     flex-wrap: wrap;
+    max-width: 50rem;
+    margin: 100px auto;
 }
 
-main form:last-of-type label {
-    text-align: right;
-    display: block;
-    width: 40%;
-    border-bottom: 2px solid brown;
+main form:last-of-type li {
+    display: flex;
+    justify-content: space-between;
 }
 
-main form:last-of-type input {
-    display: block;
-    width: 40%;
+li {
+    width: 100%;
 }
 
-main form:last-of-type label:nth-of-type(even) {
+main form:last-of-type li:nth-of-type(even) {
     color: rgb(8, 8, 110);
 }
 
-main form:last-of-type label:nth-of-type(odd) {
+main form:last-of-type li:nth-of-type(odd) {
     color: rgb(11, 161, 166);
+}
+
+.footy_wall:hover {
+    width: 9.5rem;
+    transform: rotate(30deg) scale(1.5) skew(20deg);
+    transition: transform 300ms;
+}
+
+main form:last-of-type input:checked+label {
+    text-decoration: line-through;
 }

@@ -2,7 +2,7 @@
   font-size: 62.5%;
   --color-dark-blue: #1a1e42;
   --color-dark-blue-faded: rgb(26, 30, 66, 0.80);
-  --color-orange: #F7931A;
+  --color-orange: #e28b1f;
   --color-white: #fff;
   --color-grey-500: #667085;
   --color-grey-400: #515151;
@@ -151,8 +151,8 @@ h5 {
   /* 144.444% */
 }
 
-strong {
-  color: var(--color-orange);
+h1 .wality {
+  color: #a46400;
 
 }
 
@@ -361,7 +361,7 @@ a {
 }
 
 .my_butt {
-  color: var(--color-white);
+  color: var black;
   font-family: Space Grotesk;
   font-size: 1.8rem;
   font-style: normal;
@@ -539,12 +539,12 @@ footer {
 }
 
 .scope {
-  max-width: 17rem;
+  max-width: 100%;
 }
 
 .scope_2 {
-  max-width: 17rem;
-  width: 100%;
+
+  max-width: 100%;
 }
 
 .element {
@@ -647,7 +647,7 @@ toolkit_area li {
 }
 
 .text_gr_button {
-  color: var(--color-white);
+  color: black;
   font-family: Space Grotesk;
   font-size: 1.8rem;
   font-style: normal;
@@ -768,7 +768,7 @@ toolkit_area li {
   font-style: normal;
   font-weight: 600;
   line-height: 28px;
-  color: var(--color-orange);
+  color: #a46400;
 }
 
 .our_down {

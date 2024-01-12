@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Формы</title>
+    <title>registration</title>
     <link rel="stylesheet" href="/CSS/normalize.css" />
     <link rel="stylesheet" href="/CSS/style.css" />
     <link rel="stylesheet" href="/CSS/form.css" />
@@ -12,7 +12,7 @@
     <header>
       <div class="wrapper_header">
         <a class="montserrat" href="./index.html">ReWallet</a>
-        <nav class="sm_hidden">
+        <nav class="sh_hided">
           <a href="#Whyre">Why ReWallet</a><a href="aboutus">About us</a>
           <a href="#howdoes">How does it work</a><a href="#faq">FAQ</a>
           <a href="#wallets"
@@ -33,7 +33,7 @@
           ></a>
           <a href="#blog">Blog</a>
         </nav>
-        <div class="sm-hidden header__buttons">
+        <div class="sh_hided header__buttons">
           <button>
             <svg
               width="20"
@@ -67,81 +67,80 @@
       </div>
     </header>
     <main>
-      <form method="POST" action="//httpbin.org/post">
+      <form method="POST">
         <fieldset>
-          <legend>Регистрация нового пользователя</legend>
-          <fieldset>
-            <legend>Личные данные</legend>
-            <span>Ваш Пол:</span>
-            <input type="radio" name="sex" id="woman" value="woman" /><label
-              for="woman"
+          <legend>Personal data:</legend>
+          <span>Sex:</span>
+          <input type="radio" name="sex" id="woman" value="woman" /><label
+            for="woman"
+          >
+            Woman
+          </label>
+          <input type="radio" name="sex" id="man" value="man" /><label
+            for="man"
+          >
+            Man
+          </label>
+          <div>
+            <input required type="text" id="name" placeholder="name" />
+            <label for="name">Your name</label>
+          </div>
+          <div>
+            <input type="date" name="birth" id="birth" />
+            <label for="birth">Date of birth</label>
+          </div>
+          <div>
+            <input
+              maxlength="50"
+              minlength="8"
+              required
+              type="password"
+              name="password"
+              id="password"
+            />
+            <label for="password"
+              >Write down your password*(from 8 to 50 symbols)</label
             >
-              Женский
-            </label>
-            <input type="radio" name="sex" id="man" value="man" /><label
-              for="man"
-            >
-              Мужской
-            </label>
-            <div class="transparent">
-              <input required type="text" id="name" placeholder="Имя" />
-              <label for="name">Ваше Имя</label>
-            </div>
-            <div class="transparent">
-              <input type="date" name="birth" id="birth" />
-              <label for="birth">Дата рождения</label>
-            </div>
-            <div class="transparent">
-              <input
-                maxlength="50"
-                minlength="8"
-                required
-                type="password"
-                name="password"
-                id="password"
-              />
-              <label for="password">Введите пароль*(от 8 до 50 символов)</label>
-            </div>
-          </fieldset>
-          <fieldset>
-            <legend>Контактные данные</legend>
-            <div class="transparent">
-              <input
-                required
-                type="email"
-                name="email"
-                id="email"
-                placeholder="info@example.com"
-              /><label for="email">Введите ваш email</label>
-            </div>
-            <div class="transparent">
-              <input
-                placeholder="+7 (991) 170-59-00"
-                maxlength="14"
-                minlength="10"
-                type="tel"
-                name="phone"
-                id="phone"
-              />
-              <label for="phone">Введите ваш номер телефона</label>
-            </div>
-            <div class="transparent">
-              <select name="datetime" id="daytime">
-                <option value="1">Утро</option>
-                <option selected value="4">День</option>
-                <option value="2">Вечер</option>
-                <option value="3">Ночь</option>
-              </select>
-              <span>Удобный интервал для связи</span>
-            </div>
-          </fieldset>
-          <div class="transparent drop">
-            <button class="fir_but" type="reset">Сбросить</button>
-            <button class="sec_but" type="submit">Отправить</button>
           </div>
         </fieldset>
+        <fieldset>
+          <legend>Contact information</legend>
+          <div>
+            <input
+              required
+              type="email"
+              name="email"
+              id="email"
+              placeholder="info@example.com"
+            /><label for="email">write down your email</label>
+          </div>
+          <div>
+            <input
+              placeholder="+7 (991) 170-59-00"
+              maxlength="14"
+              minlength="10"
+              type="tel"
+              name="phone"
+              id="phone"
+            />
+            <label for="phone">Your phone numbers</label>
+          </div>
+          <div>
+            <select name="datetime" id="daytime">
+              <option value="1">Morning</option>
+              <option selected value="4">Mid day</option>
+              <option value="2">Evening</option>
+              <option value="3">Night</option>
+            </select>
+            <span>Convenient communication interval</span>
+          </div>
+        </fieldset>
+        <div class="drop">
+          <button class="fir_but" type="reset">Delete</button>
+          <button class="sec_but" type="submit">Send</button>
+        </div>
       </form>
-      <form class="palce" action="//httpbin.org/post">
+      <form class="palce">
         <dl>
           <dt>Pseudoelement</dt>
           <dd>
@@ -395,8 +394,10 @@
               <li><a href="#faq">FAQ</a></li>
               <li><a href="#wallets">Wallets</a></li>
               <li><a href="#blog">Blog</a></li>
-              <li class="sm-hidden"><a href="#">Imprint</a></li>
-              <li class="sm-hidden"><a href="#">Privacy Policy</a></li>
+              <li class="sh_hided"><a href="#">Imprint</a></li>
+              <li class="sh_hided">
+                <a href="#">Privacy Policy</a>
+              </li>
             </ul>
           </nav>
           <div class="otz">
@@ -446,9 +447,11 @@
           <p class="figcaption margin_0">© Copyright 2023 ReWallet</p>
           <ul class="imprint lg-hidden">
             <li class="bruno_sup"><a href="#">Imprint</a></li>
-            <li class="bruno_sup"><a href="#">Privacy Policy</a></li>
+            <li class="bruno_sup">
+              <a href="#">Privacy Policy</a>
+            </li>
           </ul>
-          <div class="sm-hidden feeticons">
+          <div class="sh_hided feeticons">
             <svg
               width="24"
               height="25"

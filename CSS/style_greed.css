@@ -1,8 +1,7 @@
 body {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
-  justify-content: center
+  justify-content: center;
 }
 
 footer {
@@ -10,7 +9,7 @@ footer {
 }
 
 main {
-  display: flex;
+  display: grid;
   flex-direction: column;
   padding-top: 100px;
   padding-bottom: 100px;
@@ -30,44 +29,44 @@ main {
   grid-template-rows: repeat(6, minmax(0, 1fr));
 }
 
-.s1 {
+.cube1 {
   grid-column: span 2;
 }
 
-.s2 {
+.cube2 {
   background-color: yellow;
   grid-column: span 2;
 }
 
-.s3 {
+.cube3 {
   grid-column: span 2;
   grid-row: span 4;
   background-color: red;
 }
 
-.s4 {
+.cube4 {
   grid-column: span 2;
   grid-row: span 2;
   background-color: yellow;
 }
 
-.s5 {
+.cube5 {
   grid-row: span 2;
 }
 
-.s6 {
+.cube6 {
   grid-row: span 2;
 }
 
-.s7 {
+.cube7 {
   background-color: black;
 }
 
-.s8 {
+.cube8 {
   grid-column: span 1;
 }
 
-.s9 {
+.cube9 {
   grid-column: span 2;
 }
 
@@ -77,7 +76,7 @@ main {
   border: 3px solid var(--color-dark-blue);
 }
 
-.the_grid {
+.grids {
   display: grid;
   margin: 100px auto;
   width: 720px;
@@ -95,40 +94,41 @@ main {
   overflow-x: hidden;
 }
 
-.the_grid>div:first-of-type {
+.grids div:first-of-type {
   height: 3fr;
   padding: 15px;
   padding-right: none;
 
 }
 
-.the_grid>div:not(:first-of-type) {
+.grids div:not(:first-of-type) {
   height: 100%;
 }
 
-.the_grid>div:not(.sidebar)>svg {
+.grids div:not(.sidebar)>svg {
   border-radius: 10px;
 }
 
-.the_grid svg {
+.grids svg {
   fill: black !important;
 }
 
 .sidebar {
   grid-area: sidebar;
   font-size: 2.2rem;
-  display: flex;
+  display: grid;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-decoration: underline;
   text-decoration-color: #fff;
+  background-color: rgb(233, 233, 233);
 
 }
 
-.sidebar>a {
-  color: var(--color-orange);
-  margin: 10px 0;
+.side_a {
+  color: var(--color-orange) !important;
+  margin: 8px 0;
 }
 
 .big_guy {
@@ -163,24 +163,22 @@ main {
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 
-.photo_ads>div {
+.photo_ads div {
   display: grid;
   grid-template:
-    "a" 1fr
-  ;
-  width: 50%;
-  /* min-width: 180px; */
+    "a" 1fr;
+  max-width: 200px;
   aspect-ratio: 1;
-  background-color: var(--color-green);
+  background-color: var(--color-black);
 }
 
-.photo_ads>div>img {
+.photo_ads div img {
   grid-area: a;
   max-width: 100%;
 }
 
-.photo_ads>div>a {
-  display: flex;
+.walleyb {
+  display: grid;
   justify-content: center;
   align-items: center;
   height: 100%;

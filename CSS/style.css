@@ -393,11 +393,6 @@ a {
   background-color: var(--color-dark-blue);
 }
 
-/*5 section our_promise */
-
-/*7 section Rewallet_blog */
-/*8 section Frequently */
-/*9 section */
 html {
   margin-left: 0;
 }
@@ -577,10 +572,6 @@ footer {
   flex-wrap: wrap;
   max-width: 130rem;
 
-}
-
-toolkit_area li {
-  margin-bottom: 2rem;
 }
 
 .why_not {
@@ -955,7 +946,7 @@ figure figcaption span {
   margin-right: 14px;
 }
 
-.sm-hidden {
+.sh_hided {
   display: none;
 }
 
@@ -964,7 +955,7 @@ figure figcaption span {
   margin-right: auto;
 }
 
-.lg-hidden {
+.shadow_hidden {
   display: unset;
 }
 
@@ -996,14 +987,14 @@ figure figcaption span {
     gap: 40px;
   }
 
-  .sm-hidden {
+  .sh_hided {
     display: none;
   }
 
 }
 
 @media screen and (min-width: 1024px) {
-  .sm-hidden {
+  .sh_hided {
     display: initial;
   }
 
@@ -1285,7 +1276,7 @@ figure figcaption span {
     margin: 0;
   }
 
-  .lg-hidden {
+  .shadow_hidden {
     display: none;
   }
 

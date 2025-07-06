@@ -3,19 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>registration</title>
-    <link rel="stylesheet" href="/CSS/normalize.css" />
-    <link rel="stylesheet" href="/CSS/style.css" />
-    <link rel="stylesheet" href="/CSS/form.css" />
+    <title>Registration - ReWallet</title>
+    <link rel="stylesheet" href="CSS/normalize.css" />
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="stylesheet" href="CSS/form.css" />
   </head>
   <body>
+    <a class="skip-link" href="#main">Skip to content</a>
     <header>
       <div class="wrapper_header">
         <a class="montserrat" href="./index.html">ReWallet</a>
         <nav class="sh_hided">
-          <a href="#Whyre">Why ReWallet</a><a href="aboutus">About us</a>
-          <a href="#howdoes">How does it work</a><a href="#faq">FAQ</a>
-          <a href="#wallets"
+          <a href="index.html#Whyre">Why ReWallet</a><a href="index.html#aboutus">About us</a>
+          <a href="index.html#howdoes">How does it work</a><a href="index.html#faq">FAQ</a>
+          <a href="index.html#wallets"
             >Wallets<svg
               width="20"
               height="20"
@@ -31,7 +32,7 @@
                 stroke-linejoin="round"
               /></svg
           ></a>
-          <a href="#blog">Blog</a>
+          <a href="index.html#Blog">Blog</a><a href="form.html">Form</a>
         </nav>
         <div class="sh_hided header__buttons">
           <button>
@@ -62,375 +63,418 @@
           <button>Start now</button>
         </div>
         <button class="butt">
-          <img src="/Images/Category.svg" alt="category" />
+          <img src="Images/Category.svg" alt="category" />
         </button>
       </div>
     </header>
-    <main>
-      <form method="POST">
-        <fieldset>
-          <legend>Personal data:</legend>
-          <span>Sex:</span>
-          <input type="radio" name="sex" id="woman" value="woman" /><label
-            for="woman"
-          >
-            Woman
-          </label>
-          <input type="radio" name="sex" id="man" value="man" /><label
-            for="man"
-          >
-            Man
-          </label>
-          <div>
-            <input required type="text" id="name" placeholder="name" />
-            <label for="name">Your name</label>
+    <main id="main">
+      <section class="form-section">
+        <div class="wrapper_none">
+          <div class="line"></div>
+          <h1 class="form-title">Registration Form</h1>
+          <p class="form-subtitle">Please fill out the form below to get started with ReWallet</p>
+          
+          <!-- CSS Definitions Section -->
+          <div class="css-definitions">
+            <dl>
+              <dt>Pseudoelement</dt>
+              <dd>Is a keyword added to a selector that lets you style a specific part of the selected element(s).</dd>
+              <dt>Pseudoclass</dt>
+              <dd>Is a selector that selects elements that are in a specific state, e.g. they are the first element of their type, or they are being hovered over by the mouse pointer.</dd>
+            </dl>
           </div>
-          <div>
-            <input type="date" name="birth" id="birth" />
-            <label for="birth">Date of birth</label>
+
+          <!-- Original Checkboxes Section -->
+          <div class="checkboxes-section">
+            <ul class="pseudoclasses-list">
+              <li>
+                <input id="9801" type="checkbox" />
+                <label for="9801">:active</label>
+              </li>
+              <li>
+                <input id="9802" type="checkbox" />
+                <label for="9802">:any</label>
+              </li>
+              <li>
+                <input id="9803" type="checkbox" />
+                <label for="9803">:any-link</label>
+              </li>
+              <li>
+                <input id="9804" type="checkbox" />
+                <label for="9804">:checked</label>
+              </li>
+              <li>
+                <input id="9805" type="checkbox" />
+                <label for="9805">:default</label>
+              </li>
+              <li>
+                <input id="9806" type="checkbox" />
+                <label for="9806">:defined</label>
+              </li>
+              <li>
+                <input id="9807" type="checkbox" />
+                <label for="9807">:dir()</label>
+              </li>
+              <li>
+                <input id="9808" type="checkbox" />
+                <label for="9808">:disabled</label>
+              </li>
+              <li>
+                <input id="9809" type="checkbox" />
+                <label for="9809">:empty</label>
+              </li>
+              <li>
+                <input id="98010" type="checkbox" />
+                <label for="98010">:enabled</label>
+              </li>
+              <li>
+                <input id="98011" type="checkbox" />
+                <label for="98011">:first</label>
+              </li>
+              <li>
+                <input id="98012" type="checkbox" />
+                <label for="98012">:first-child</label>
+              </li>
+              <li>
+                <input id="98013" type="checkbox" />
+                <label for="98013">:first-of-type</label>
+              </li>
+              <li>
+                <input id="98014" type="checkbox" />
+                <label for="98014">:fullscreen</label>
+              </li>
+              <li>
+                <input checked id="98015" type="checkbox" />
+                <label for="98015">:focus</label>
+              </li>
+              <li>
+                <input checked id="98016" type="checkbox" />
+                <label for="98016">:hover</label>
+              </li>
+              <li>
+                <input id="98017" type="checkbox" />
+                <label for="98017">:indeterminate</label>
+              </li>
+              <li>
+                <input id="98018" type="checkbox" />
+                <label for="98018">:in-range</label>
+              </li>
+              <li>
+                <input id="98019" type="checkbox" />
+                <label for="98019">:Invalid</label>
+              </li>
+              <li>
+                <input id="98020" type="checkbox" />
+                <label for="98020">:lang()</label>
+              </li>
+              <li>
+                <input id="98021" type="checkbox" />
+                <label for="98021">:last-child</label>
+              </li>
+              <li>
+                <input id="98022" type="checkbox" />
+                <label for="98022">:last-of-type</label>
+              </li>
+              <li>
+                <input id="98023" type="checkbox" />
+                <label for="98023">:left</label>
+              </li>
+              <li>
+                <input id="98024" type="checkbox" />
+                <label for="98024">:link</label>
+              </li>
+              <li>
+                <input id="98025" type="checkbox" />
+                <label for="98025">:not()</label>
+              </li>
+              <li>
+                <input checked id="98026" type="checkbox" />
+                <label for="98026">:nth-child</label>
+              </li>
+              <li>
+                <input id="a1" type="checkbox" />
+                <label for="a1">:nth-last-child</label>
+              </li>
+              <li>
+                <input id="a2" type="checkbox" />
+                <label for="a2">:nth-last-of-type()</label>
+              </li>
+              <li>
+                <input checked id="a3" type="checkbox" />
+                <label for="a3">:nth-of-type()</label>
+              </li>
+              <li>
+                <input id="a4" type="checkbox" />
+                <label for="a4">:only-child</label>
+              </li>
+              <li>
+                <input id="a5" type="checkbox" />
+                <label for="a5">:only-of-type</label>
+              </li>
+              <li>
+                <input id="a6" type="checkbox" />
+                <label for="a6">:optional</label>
+              </li>
+              <li>
+                <input id="a7" type="checkbox" />
+                <label for="a7">:out-of-range</label>
+              </li>
+              <li>
+                <input id="a8" type="checkbox" />
+                <label for="a8">:read-only</label>
+              </li>
+              <li>
+                <input id="a9" type="checkbox" />
+                <label for="a9">:read-write</label>
+              </li>
+              <li>
+                <input checked id="a10" type="checkbox" />
+                <label for="a10">:required</label>
+              </li>
+              <li>
+                <input id="a11" type="checkbox" />
+                <label for="a11">:right</label>
+              </li>
+              <li>
+                <input checked id="a12" type="checkbox" />
+                <label for="a12">:root</label>
+              </li>
+              <li>
+                <input id="a13" type="checkbox" />
+                <label for="a13">:scope</label>
+              </li>
+              <li>
+                <input id="a14" type="checkbox" />
+                <label for="a14">:target</label>
+              </li>
+              <li>
+                <input id="a15" type="checkbox" />
+                <label for="a15">:valid</label>
+              </li>
+              <li>
+                <input checked id="a16" type="checkbox" />
+                <label for="a16">:visited</label>
+              </li>
+            </ul>
+            <ul class="pseudoelements-list">
+              <li>
+                <input checked id="b1" type="checkbox" />
+                <label for="b1">::after</label>
+              </li>
+              <li>
+                <input checked id="b2" type="checkbox" />
+                <label for="b2">::before</label>
+              </li>
+              <li>
+                <input checked id="b3" type="checkbox" />
+                <label for="b3">::first-letter</label>
+              </li>
+              <li>
+                <input id="b4" type="checkbox" />
+                <label for="b4">::first-line</label>
+              </li>
+              <li>
+                <input id="b5" type="checkbox" />
+                <label for="b5">::gphoto_adsmar-error</label>
+              </li>
+              <li>
+                <input id="b6" type="checkbox" />
+                <label for="b6">::marker</label>
+              </li>
+              <li>
+                <input checked id="b7" type="checkbox" />
+                <label for="b7">::selection</label>
+              </li>
+              <li>
+                <input id="b8" type="checkbox" />
+                <label for="b8">::spelling-error</label>
+              </li>
+            </ul>
           </div>
-          <div>
-            <input
-              maxlength="50"
-              minlength="8"
-              required
-              type="password"
-              name="password"
-              id="password"
-            />
-            <label for="password"
-              >Write down your password*(from 8 to 50 symbols)</label
-            >
-          </div>
-        </fieldset>
-        <fieldset>
-          <legend>Contact information</legend>
-          <div>
-            <input
-              required
-              type="email"
-              name="email"
-              id="email"
-              placeholder="info@example.com"
-            /><label for="email">write down your email</label>
-          </div>
-          <div>
-            <input
-              placeholder="+7 (991) 170-59-00"
-              maxlength="14"
-              minlength="10"
-              type="tel"
-              name="phone"
-              id="phone"
-            />
-            <label for="phone">Your phone numbers</label>
-          </div>
-          <div>
-            <select name="datetime" id="daytime">
-              <option value="1">Morning</option>
-              <option selected value="4">Mid day</option>
-              <option value="2">Evening</option>
-              <option value="3">Night</option>
-            </select>
-            <span>Convenient communication interval</span>
-          </div>
-        </fieldset>
-        <div class="drop">
-          <button class="fir_but" type="reset">Delete</button>
-          <button class="sec_but" type="submit">Send</button>
+
+          <!-- Main Registration Form -->
+          <form method="POST" class="registration-form">
+            <fieldset class="form-fieldset">
+              <legend class="fieldset-legend">Personal Information</legend>
+              
+              <div class="form-group">
+                <label class="form-label" for="name">Full Name *</label>
+                <input 
+                  required 
+                  type="text" 
+                  id="name" 
+                  name="name"
+                  placeholder="Enter your full name"
+                  class="form-input"
+                />
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="email">Email Address *</label>
+                <input 
+                  required 
+                  type="email" 
+                  id="email" 
+                  name="email"
+                  placeholder="your.email@example.com"
+                  class="form-input"
+                />
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="phone">Phone Number</label>
+                <input 
+                  type="tel" 
+                  id="phone" 
+                  name="phone"
+                  placeholder="+1 (555) 123-4567"
+                  class="form-input"
+                />
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="birth">Date of Birth</label>
+                <input 
+                  type="date" 
+                  id="birth" 
+                  name="birth"
+                  class="form-input"
+                />
+              </div>
+
+              <div class="form-group">
+                <label class="form-label">Gender</label>
+                <div class="radio-group">
+                  <input type="radio" name="gender" id="female" value="female" />
+                  <label for="female" class="radio-label">Female</label>
+                  
+                  <input type="radio" name="gender" id="male" value="male" />
+                  <label for="male" class="radio-label">Male</label>
+                  
+                  <input type="radio" name="gender" id="other" value="other" />
+                  <label for="other" class="radio-label">Other</label>
+                </div>
+              </div>
+            </fieldset>
+
+            <fieldset class="form-fieldset">
+              <legend class="fieldset-legend">Account Security</legend>
+              
+              <div class="form-group">
+                <label class="form-label" for="password">Password *</label>
+                <input 
+                  required 
+                  type="password" 
+                  id="password" 
+                  name="password"
+                  placeholder="Create a strong password"
+                  minlength="8"
+                  maxlength="50"
+                  class="form-input"
+                />
+                <small class="form-hint">Password must be 8-50 characters long</small>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="confirm-password">Confirm Password *</label>
+                <input 
+                  required 
+                  type="password" 
+                  id="confirm-password" 
+                  name="confirm-password"
+                  placeholder="Confirm your password"
+                  class="form-input"
+                />
+              </div>
+            </fieldset>
+
+            <fieldset class="form-fieldset">
+              <legend class="fieldset-legend">Preferences</legend>
+              
+              <div class="form-group">
+                <label class="form-label" for="timezone">Preferred Contact Time</label>
+                <select name="contact-time" id="timezone" class="form-select">
+                  <option value="">Select preferred time</option>
+                  <option value="morning">Morning (9 AM - 12 PM)</option>
+                  <option value="afternoon" selected>Afternoon (12 PM - 5 PM)</option>
+                  <option value="evening">Evening (5 PM - 9 PM)</option>
+                  <option value="night">Night (9 PM - 12 AM)</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label">Communication Preferences</label>
+                <div class="checkbox-group">
+                  <input type="checkbox" id="email-news" name="preferences" value="email-news" />
+                  <label for="email-news" class="checkbox-label">Email Newsletter</label>
+                  
+                  <input type="checkbox" id="sms-updates" name="preferences" value="sms-updates" />
+                  <label for="sms-updates" class="checkbox-label">SMS Updates</label>
+                  
+                  <input type="checkbox" id="marketing" name="preferences" value="marketing" />
+                  <label for="marketing" class="checkbox-label">Marketing Communications</label>
+                </div>
+              </div>
+            </fieldset>
+
+            <div class="form-actions">
+              <button type="reset" class="btn btn-secondary">Clear Form</button>
+              <button type="submit" class="btn btn-primary">Create Account</button>
+            </div>
+          </form>
         </div>
-      </form>
-      <form class="palce">
-        <dl>
-          <dt>Pseudoelement</dt>
-          <dd>
-            Is a keyword added to a selector that lets you style a specific part
-            of the selected element(s).
-          </dd>
-          <dt>Pseudoclass</dt>
-          <dd>
-            Is a selector that selects elements that are in a specific state,
-            e.g. they are the first element of their type, or they are being
-            hovered over by the mouse pointer.
-          </dd>
-        </dl>
-        <ul>
-          <li>
-            <input checked id="9801" type="checkbox" /><label for="9801">
-              :active
-            </label>
-          </li>
-          <li>
-            <input id="9802" type="checkbox" /><label for="9802">:any</label>
-          </li>
-          <li>
-            <input id="9803" type="checkbox" /><label for="9803"
-              >:any-link</label
-            >
-          </li>
-          <li>
-            <input id="9804" type="checkbox" /><label for="9804"
-              >:checked</label
-            >
-          </li>
-          <li>
-            <input id="9805" type="checkbox" /><label for="9805"
-              >:default</label
-            >
-          </li>
-          <li>
-            <input id="9806" type="checkbox" /><label for="9806"
-              >:defined</label
-            >
-          </li>
-          <li>
-            <input id="9807" type="checkbox" /><label for="9807">:dir()</label>
-          </li>
-          <li>
-            <input id="9808" type="checkbox" /><label for="9808"
-              >:disabled</label
-            >
-          </li>
-          <li>
-            <input id="9809" type="checkbox" /><label for="9809">:empty</label>
-          </li>
-          <li>
-            <input id="98010" type="checkbox" /><label for="98010"
-              >:enabled</label
-            >
-          </li>
-          <li>
-            <input id="98011" type="checkbox" /><label for="98011"
-              >:first</label
-            >
-          </li>
-          <li>
-            <input id="98012" type="checkbox" /><label for="98012"
-              >:first-child</label
-            >
-          </li>
-          <li>
-            <input id="98013" type="checkbox" /><label for="98013"
-              >:first-of-type</label
-            >
-          </li>
-          <li>
-            <input id="98014" type="checkbox" /><label for="98014"
-              >:fullscreen</label
-            >
-          </li>
-          <li>
-            <input id="98015" type="checkbox" /><label for="98015"
-              >:focus</label
-            >
-          </li>
-          <li>
-            <input id="98016" type="checkbox" /><label for="98016"
-              >:hover</label
-            >
-          </li>
-          <li>
-            <input id="98017" type="checkbox" /><label for="98017"
-              >:indeterminate</label
-            >
-          </li>
-          <li>
-            <input id="98018" type="checkbox" /><label for="98018"
-              >:in-range</label
-            >
-          </li>
-          <li>
-            <input id="98019" type="checkbox" /><label for="98019"
-              >:Invalid</label
-            >
-          </li>
-          <li>
-            <input id="98020" type="checkbox" /><label for="98020"
-              >:lang()</label
-            >
-          </li>
-          <li>
-            <input id="98021" type="checkbox" /><label for="98021"
-              >:last-child</label
-            >
-          </li>
-          <li>
-            <input id="98022" type="checkbox" /><label for="98022"
-              >:last-of-type</label
-            >
-          </li>
-          <li>
-            <input id="98023" type="checkbox" /><label for="98023">:left</label>
-          </li>
-          <li>
-            <input id="98024" type="checkbox" /><label for="98024">:link</label>
-          </li>
-          <li>
-            <input id="98025" type="checkbox" /><label for="98025"
-              >:not()</label
-            >
-          </li>
-          <li>
-            <input id="98026" type="checkbox" /><label for="98026"
-              >:nth-child</label
-            >
-          </li>
-          <li>
-            <input id="a1" type="checkbox" /><label for="a1"
-              >:nth-last-child</label
-            >
-          </li>
-          <li>
-            <input id="a2" type="checkbox" /><label for="a2"
-              >:nth-last-of-type()</label
-            >
-          </li>
-          <li>
-            <input checked id="a3" type="checkbox" /><label for="a3"
-              >:nth-of-type()</label
-            >
-          </li>
-          <li>
-            <input id="a4" type="checkbox" /><label for="a4">:only-child</label>
-          </li>
-          <li>
-            <input id="a5" type="checkbox" /><label for="a5"
-              >:only-of-type</label
-            >
-          </li>
-          <li>
-            <input id="a6" type="checkbox" /><label for="a6">:optional</label>
-          </li>
-          <li>
-            <input id="a7" type="checkbox" /><label for="a7"
-              >:out-of-range</label
-            >
-          </li>
-          <li>
-            <input id="a8" type="checkbox" /><label for="a8">:read-only</label>
-          </li>
-          <li>
-            <input id="a9" type="checkbox" /><label for="a9">:read-write</label>
-          </li>
-          <li>
-            <input checked id="a10" type="checkbox" /><label for="a10"
-              >:required</label
-            >
-          </li>
-          <li>
-            <input id="a11" type="checkbox" /><label for="a11">:right</label>
-          </li>
-          <li>
-            <input checked id="a12" type="checkbox" /><label for="a12"
-              >:root</label
-            >
-          </li>
-          <li>
-            <input id="a13" type="checkbox" /><label for="a13">:scope</label>
-          </li>
-          <li>
-            <input id="a14" type="checkbox" /><label for="a14">:target</label>
-          </li>
-          <li>
-            <input id="a15" type="checkbox" /><label for="a15">:valid</label>
-          </li>
-          <li>
-            <input checked id="a16" type="checkbox" /><label for="a16"
-              >:visited</label
-            >
-          </li>
-        </ul>
-        <ul>
-          <li>
-            <input checked id="b1" type="checkbox" /><label for="b1"
-              >::after</label
-            >
-          </li>
-          <li>
-            <input checked id="b2" type="checkbox" /><label for="b2"
-              >::before</label
-            >
-          </li>
-          <li>
-            <input checked id="b3" type="checkbox" /><label for="b3"
-              >::first-letter</label
-            >
-          </li>
-          <li>
-            <input id="b4" type="checkbox" /><label for="b4"
-              >::first-line</label
-            >
-          </li>
-          <li>
-            <input id="b5" type="checkbox" /><label for="b5"
-              >::gphoto_adsmar-error</label
-            >
-          </li>
-          <li>
-            <input id="b6" type="checkbox" /><label for="b6">::marker</label>
-          </li>
-          <li>
-            <input checked id="b7" type="checkbox" /><label for="b7"
-              >::selection</label
-            >
-          </li>
-          <li>
-            <input id="b8" type="checkbox" /><label for="b8"
-              >::spelling-error</label
-            >
-          </li>
-        </ul>
-      </form>
+      </section>
     </main>
+
     <footer>
       <div class="wrapper_footer">
         <div>
           <h3 class="montserrat footy_wall">ReWallet</h3>
           <nav>
             <ul class="footer_nav">
-              <li><a href="#whyre">Why ReWallet?</a></li>
-              <li><a href="#aboutus">About us</a></li>
-              <li><a href="#howdoes">How does it work</a></li>
-              <li><a href="#faq">FAQ</a></li>
-              <li><a href="#wallets">Wallets</a></li>
-              <li><a href="#blog">Blog</a></li>
-              <li class="sh_hided"><a href="#">Imprint</a></li>
-              <li class="sh_hided">
-                <a href="#">Privacy Policy</a>
-              </li>
+              <li><a href="index.html#whyre">Why ReWallet?</a></li>
+              <li><a href="index.html#aboutus">About us</a></li>
+              <li><a href="index.html#howdoes">How does it work</a></li>
+              <li><a href="index.html#faq">FAQ</a></li>
+              <li><a href="index.html#wallets">Wallets</a></li>
+              <li><a href="demo.html">Demo</a></li>
+              <li class="sh_hided"><a href="#Privacy">Privacy Policy</a></li>
+              <li class="sh_hided"><a href="grid.html">Grid</a></li>
+              <li><a href="form.html">Form</a></li>
             </ul>
           </nav>
           <div class="otz">
             <img
               class="trust"
-              src="/Images/trustpilot_green.svg"
+              src="Images/trustpilot_green.svg"
               alt="Trustpilot"
             />
+
             <p class="gold_stars" id="four_nine">
               <span>
                 <img
                   class="margin_star"
-                  src="/Images/Gold_star.svg"
+                  src="Images/Gold_star.svg"
                   alt="stars"
                 />
                 <img
                   class="margin_star"
-                  src="/Images/Gold_star.svg"
+                  src="Images/Gold_star.svg"
                   alt="stars"
                 />
                 <img
                   class="margin_star"
-                  src="/Images/Gold_star.svg"
+                  src="Images/Gold_star.svg"
                   alt="stars"
                 />
                 <img
                   class="margin_star"
-                  src="/Images/Gold_star.svg"
+                  src="Images/Gold_star.svg"
                   alt="stars"
                 />
                 <img
                   class="margin_star"
-                  src="/Images/Gold_star.svg"
+                  src="Images/Gold_star.svg"
                   alt="stars"
                 />
               </span>
@@ -441,104 +485,117 @@
 
         <div class="footer_bottom">
           <ul class="logo_german">
-            <img src="/Images/germany.png" alt="Germany" />
-            <img src="/Images/Bundesblock_edited-1.png" alt="Bundesblock" />
-          </ul>
-          <p class="figcaption margin_0">© Copyright 2023 ReWallet</p>
-          <ul class="imprint lg-hidden">
-            <li class="bruno_sup"><a href="#">Imprint</a></li>
-            <li class="bruno_sup">
-              <a href="#">Privacy Policy</a>
+            <li>
+              <img src="Images/germany.png" alt="Germany" />
+            </li>
+            <li>
+              <img src="Images/Bundesblock_edited-1.png" alt="Bundesblock" />
             </li>
           </ul>
+          <p class="figcaption margin_0">© Copyright 2023 ReWallet</p>
+
+          <ul class="imprint shadow_hidden">
+            <li class="bruno_sup"><a href="Imprint">Imprint</a></li>
+            <li class="bruno_sup"><a href="Privacy">Privacy Policy</a></li>
+          </ul>
           <div class="sh_hided feeticons">
-            <svg
-              width="24"
-              height="25"
-              viewBox="0 0 24 25"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <g clip-path="url(#clip0_3_287)">
-                <path
-                  d="M22.2234 0.480469H1.77187C0.792187 0.480469 0 1.25391 0 2.21016V22.7461C0 23.7023 0.792187 24.4805 1.77187 24.4805H22.2234C23.2031 24.4805 24 23.7023 24 22.7508V2.21016C24 1.25391 23.2031 0.480469 22.2234 0.480469Z"
-                  fill="#98A2B3"
-                />
-                <path
-                  d="M4.03906 4.48047L10.2162 13.3069L4 20.4801H5.39904L10.8416 14.1988L15.2402 20.4805H20L13.4749 11.1591L19.2611 4.48047H17.862L12.8499 10.2645L8.7998 4.48047H4.03906ZM6.09659 5.58172H8.28378L17.9415 19.3789H15.755L6.09659 5.58172Z"
-                  fill="white"
-                />
-              </g>
-              <defs>
-                <clipPath id="clip0_3_287">
-                  <rect
-                    width="24"
-                    height="24"
-                    fill="white"
-                    transform="translate(0 0.480469)"
+            <a href="x.com">
+              <svg
+                width="24"
+                height="25"
+                viewBox="0 0 24 25"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_3_287)">
+                  <path
+                    d="M22.2234 0.480469H1.77187C0.792187 0.480469 0 1.25391 0 2.21016V22.7461C0 23.7023 0.792187 24.4805 1.77187 24.4805H22.2234C23.2031 24.4805 24 23.7023 24 22.7508V2.21016C24 1.25391 23.2031 0.480469 22.2234 0.480469Z"
+                    fill="#98A2B3"
                   />
-                </clipPath>
-              </defs></svg
-            ><svg
-              width="24"
-              height="25"
-              viewBox="0 0 24 25"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <g clip-path="url(#clip0_3_291)">
-                <path
-                  d="M22.2234 0.480469H1.77187C0.792187 0.480469 0 1.25391 0 2.21016V22.7461C0 23.7023 0.792187 24.4805 1.77187 24.4805H22.2234C23.2031 24.4805 24 23.7023 24 22.7508V2.21016C24 1.25391 23.2031 0.480469 22.2234 0.480469ZM7.12031 20.932H3.55781V9.47578H7.12031V20.932ZM5.33906 7.91484C4.19531 7.91484 3.27188 6.99141 3.27188 5.85234C3.27188 4.71328 4.19531 3.78984 5.33906 3.78984C6.47813 3.78984 7.40156 4.71328 7.40156 5.85234C7.40156 6.98672 6.47813 7.91484 5.33906 7.91484ZM20.4516 20.932H16.8937V15.3633C16.8937 14.0367 16.8703 12.3258 15.0422 12.3258C13.1906 12.3258 12.9094 13.7742 12.9094 15.2695V20.932H9.35625V9.47578H12.7687V11.0414H12.8156C13.2891 10.1414 14.4516 9.18984 16.1813 9.18984C19.7859 9.18984 20.4516 11.5617 20.4516 14.6461V20.932Z"
-                  fill="#98A2B3"
-                />
-              </g>
-              <defs>
-                <clipPath id="clip0_3_291">
-                  <rect
-                    width="24"
-                    height="24"
+                  <path
+                    d="M4.03906 4.48047L10.2162 13.3069L4 20.4801H5.39904L10.8416 14.1988L15.2402 20.4805H20L13.4749 11.1591L19.2611 4.48047H17.862L12.8499 10.2645L8.7998 4.48047H4.03906ZM6.09659 5.58172H8.28378L17.9415 19.3789H15.755L6.09659 5.58172Z"
                     fill="white"
-                    transform="translate(0 0.480469)"
                   />
-                </clipPath>
-              </defs>
-            </svg>
-            <svg
-              width="24"
-              height="25"
-              viewBox="0 0 24 25"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
+                </g>
+                <defs>
+                  <clipPath id="clip0_3_287">
+                    <rect
+                      width="24"
+                      height="24"
+                      fill="white"
+                      transform="translate(0 0.480469)"
+                    />
+                  </clipPath>
+                </defs>
+              </svg>
+              <span class="sr-only">Twitter link</span></a
             >
-              <g clip-path="url(#clip0_3_294)">
-                <path
-                  d="M22.2234 0.480469H1.77187C0.792187 0.480469 0 1.25391 0 2.21016V22.7461C0 23.7023 0.792187 24.4805 1.77187 24.4805H22.2234C23.2031 24.4805 24 23.7023 24 22.7508V2.21016C24 1.25391 23.2031 0.480469 22.2234 0.480469Z"
-                  fill="#98A2B3"
-                />
-                <path
-                  d="M12.0047 5.92194C14.1434 5.92194 14.3967 5.93132 15.2378 5.96884C16.0195 6.00324 16.4417 6.13456 16.7231 6.244C17.0952 6.38784 17.3641 6.56294 17.6424 6.84980C17.9238 7.12264 18.0958 7.38842 18.2396 7.76052C18.349 8.04193 18.4804 8.46718 18.5148 9.24576C18.5523 10.09 18.5617 10.3433 18.5617 12.4789C18.5617 14.6177 18.5523 14.8709 18.5148 15.7121C18.4804 16.4938 18.349 16.9159 18.2396 17.1973C18.0958 17.5694 17.9207 17.8383 17.6424 18.1166C17.361 18.398 17.0952 18.57 16.7231 18.7138C16.4417 18.8232 16.0164 18.9546 15.2378 18.989C14.3936 19.0265 14.1403 19.0359 12.0047 19.0359C9.86594 19.0359 9.61266 19.0265 8.77155 18.989C7.98984 18.9546 7.56772 18.8232 7.2863 18.7138C6.91421 18.57 6.6453 18.3949 6.36701 18.1166C6.0856 17.8352 5.91362 17.5694 5.76979 17.1973C5.66035 16.9159 5.52902 16.4906 5.49463 15.7121C5.4571 14.8678 5.44772 14.6145 5.44772 12.4789C5.44772 10.3402 5.4571 10.0869 5.49463 9.24576C5.52902 8.46405 5.66035 8.04193 5.76979 7.76052C5.91362 7.38842 6.08872 7.11951 6.36701 6.84980C6.64843 6.55981 6.91421 6.38784 7.2863 6.244C7.56772 6.13456 7.99296 6.00324 8.77155 5.96884C9.61266 5.93132 9.86594 5.92194 12.0047 5.92194ZM12.0047 4.48047C9.83154 4.48047 9.55951 4.48985 8.70588 4.52737C7.85538 4.56489 7.27067 4.70247 6.76412 4.89946C6.23568 5.10584 5.78855 5.37787 5.34454 5.82501C4.8974 6.26902 4.62537 6.71615 4.419 7.24146C4.22201 7.75114 4.08442 8.33273 4.0469 9.18322C4.00938 10.04 4 10.312 4 12.4852C4 14.6583 4.00938 14.9303 4.0469 15.784C4.08442 16.6345 4.22201 17.2192 4.419 17.7257C4.62537 18.2542 4.8974 18.7013 5.34454 19.1453C5.78855 19.5893 6.23568 19.8645 6.76099 20.0677C7.27067 20.2647 7.85226 20.4023 8.70275 20.4398C9.55638 20.4773 9.82841 20.4867 12.0016 20.4867C14.1747 20.4867 14.4467 20.4773 15.3004 20.4398C16.1509 20.4023 16.7356 20.2647 17.2421 20.0677C17.7674 19.8645 18.2146 19.5893 18.6586 19.1453C19.1026 18.7013 19.3778 18.2542 19.581 17.7289C19.778 17.2192 19.9156 16.6376 19.9531 15.7871C19.9906 14.9335 20 14.6614 20 12.4883C20 10.3151 19.9906 10.0431 19.9531 9.18948C19.9156 8.33898 19.778 7.75426 19.581 7.24772C19.384 6.71615 19.112 6.26902 18.6648 5.82501C18.2208 5.381 17.7737 5.10584 17.2484 4.90259C16.7387 4.7056 16.1571 4.56802 15.3066 4.5305C14.4499 4.48985 14.1778 4.48047 12.0047 4.48047Z"
-                  fill="white"
-                />
-                <path
-                  d="M12.0046 8.37305C9.73453 8.37305 7.89282 10.2148 7.89282 12.4848C7.89282 14.7549 9.73453 16.5966 12.0046 16.5966C14.2747 16.5966 16.1164 14.7549 16.1164 12.4848C16.1164 10.2148 14.2747 8.37305 12.0046 8.37305ZM12.0046 15.152C10.5319 15.152 9.33742 13.9576 9.33742 12.4848C9.33742 11.0121 10.5319 9.81764 12.0046 9.81764C13.4773 9.81764 14.6718 11.0121 14.6718 12.4848C14.6718 13.9576 13.4773 15.152 12.0046 15.152Z"
-                  fill="white"
-                />
-                <path
-                  d="M17.239 8.20994C17.239 8.7415 16.8075 9.16988 16.279 9.16988C15.7475 9.16988 15.3191 8.73837 15.3191 8.20994C15.3191 7.67838 15.7506 7.25 16.279 7.25C16.8075 7.25 17.239 7.6815 17.239 8.20994Z"
-                  fill="white"
-                />
-              </g>
-              <defs>
-                <clipPath id="clip0_3_294">
-                  <rect
-                    width="24"
-                    height="24"
-                    fill="white"
-                    transform="translate(0 0.480469)"
+            <a href="something.com">
+              <svg
+                width="24"
+                height="25"
+                viewBox="0 0 24 25"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_3_291)">
+                  <path
+                    d="M22.2234 0.480469H1.77187C0.792187 0.480469 0 1.25391 0 2.21016V22.7461C0 23.7023 0.792187 24.4805 1.77187 24.4805H22.2234C23.2031 24.4805 24 23.7023 24 22.7508V2.21016C24 1.25391 23.2031 0.480469 22.2234 0.480469ZM7.12031 20.932H3.55781V9.47578H7.12031V20.932ZM5.33906 7.91484C4.19531 7.91484 3.27188 6.99141 3.27188 5.85234C3.27188 4.71328 4.19531 3.78984 5.33906 3.78984C6.47813 3.78984 7.40156 4.71328 7.40156 5.85234C7.40156 6.98672 6.47813 7.91484 5.33906 7.91484ZM20.4516 20.932H16.8937V15.3633C16.8937 14.0367 16.8703 12.3258 15.0422 12.3258C13.1906 12.3258 12.9094 13.7742 12.9094 15.2695V20.932H9.35625V9.47578H12.7687V11.0414H12.8156C13.2891 10.1414 14.4516 9.18984 16.1813 9.18984C19.7859 9.18984 20.4516 11.5617 20.4516 14.6461V20.932Z"
+                    fill="#98A2B3"
                   />
-                </clipPath>
-              </defs>
-            </svg>
+                </g>
+                <defs>
+                  <clipPath id="clip0_3_291">
+                    <rect
+                      width="24"
+                      height="24"
+                      fill="white"
+                      transform="translate(0 0.480469)"
+                    />
+                  </clipPath>
+                </defs>
+              </svg>
+              <span class="sr-only">something link</span></a
+            >
+            <a href="//instagphoto_ads.com">
+              <svg
+                width="24"
+                height="25"
+                viewBox="0 0 24 25"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_3_294)">
+                  <path
+                    d="M22.2234 0.480469H1.77187C0.792187 0.480469 0 1.25391 0 2.21016V22.7461C0 23.7023 0.792187 24.4805 1.77187 24.4805H22.2234C23.2031 24.4805 24 23.7023 24 22.7508V2.21016C24 1.25391 23.2031 0.480469 22.2234 0.480469Z"
+                    fill="#98A2B3"
+                  />
+                  <path
+                    d="M12.0047 5.92194C14.1434 5.92194 14.3967 5.93132 15.2378 5.96884C16.0195 6.00324 16.4417 6.13456 16.7231 6.244C17.0952 6.38784 17.3641 6.56294 17.6424 6.84123C17.9238 7.12264 18.0958 7.38842 18.2396 7.76052C18.349 8.04193 18.4804 8.46718 18.5148 9.24576C18.5523 10.09 18.5617 10.3433 18.5617 12.4789C18.5617 14.6177 18.5523 14.8709 18.5148 15.7121C18.4804 16.4938 18.349 16.9159 18.2396 17.1973C18.0958 17.5694 17.9207 17.8383 17.6424 18.1166C17.361 18.398 17.0952 18.57 16.7231 18.7138C16.4417 18.8232 16.0164 18.9546 15.2378 18.989C14.3936 19.0265 14.1403 19.0359 12.0047 19.0359C9.86594 19.0359 9.61266 19.0265 8.77155 18.989C7.98984 18.9546 7.56772 18.8232 7.2863 18.7138C6.91421 18.57 6.6453 18.3949 6.36701 18.1166C6.0856 17.8352 5.91362 17.5694 5.76979 17.1973C5.66035 16.9159 5.52902 16.4906 5.49463 15.7121C5.4571 14.8678 5.44772 14.6145 5.44772 12.4789C5.44772 10.3402 5.4571 10.0869 5.49463 9.24576C5.52902 8.46405 5.66035 8.04193 5.76979 7.76052C5.91362 7.38842 6.08872 7.11951 6.36701 6.84123C6.64843 6.55981 6.91421 6.38784 7.2863 6.244C7.56772 6.13456 7.99296 6.00324 8.77155 5.96884C9.61266 5.93132 9.86594 5.92194 12.0047 5.92194ZM12.0047 4.48047C9.83154 4.48047 9.55951 4.48985 8.70588 4.52737C7.85538 4.56489 7.27067 4.70247 6.76412 4.89946C6.23568 5.10584 5.78855 5.37787 5.34454 5.82501C4.8974 6.26902 4.62537 6.71615 4.419 7.24146C4.22201 7.75114 4.08442 8.33273 4.0469 9.18322C4.00938 10.04 4 10.312 4 12.4852C4 14.6583 4.00938 14.9303 4.0469 15.784C4.08442 16.6345 4.22201 17.2192 4.419 17.7257C4.62537 18.2542 4.8974 18.7013 5.34454 19.1453C5.78855 19.5893 6.23568 19.8645 6.76099 20.0677C7.27067 20.2647 7.85226 20.4023 8.70275 20.4398C9.55638 20.4773 9.82841 20.4867 12.0016 20.4867C14.1747 20.4867 14.4467 20.4773 15.3004 20.4398C16.1509 20.4023 16.7356 20.2647 17.2421 20.0677C17.7674 19.8645 18.2146 19.5893 18.6586 19.1453C19.1026 18.7013 19.3778 18.2542 19.581 17.7289C19.778 17.2192 19.9156 16.6376 19.9531 15.7871C19.9906 14.9335 20 14.6614 20 12.4883C20 10.3151 19.9906 10.0431 19.9531 9.18948C19.9156 8.33898 19.778 7.75426 19.581 7.24772C19.384 6.71615 19.112 6.26902 18.6648 5.82501C18.2208 5.381 17.7737 5.10584 17.2484 4.90259C16.7387 4.7056 16.1571 4.56802 15.3066 4.5305C14.4499 4.48985 14.1778 4.48047 12.0047 4.48047Z"
+                    fill="white"
+                  />
+                  <path
+                    d="M12.0046 8.37305C9.73453 8.37305 7.89282 10.2148 7.89282 12.4848C7.89282 14.7549 9.73453 16.5966 12.0046 16.5966C14.2747 16.5966 16.1164 14.7549 16.1164 12.4848C16.1164 10.2148 14.2747 8.37305 12.0046 8.37305ZM12.0046 15.152C10.5319 15.152 9.33742 13.9576 9.33742 12.4848C9.33742 11.0121 10.5319 9.81764 12.0046 9.81764C13.4773 9.81764 14.6718 11.0121 14.6718 12.4848C14.6718 13.9576 13.4773 15.152 12.0046 15.152Z"
+                    fill="white"
+                  />
+                  <path
+                    d="M17.239 8.20994C17.239 8.7415 16.8075 9.16988 16.279 9.16988C15.7475 9.16988 15.3191 8.73837 15.3191 8.20994C15.3191 7.67838 15.7506 7.25 16.279 7.25C16.8075 7.25 17.239 7.6815 17.239 8.20994Z"
+                    fill="white"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_3_294">
+                    <rect
+                      width="24"
+                      height="24"
+                      fill="white"
+                      transform="translate(0 0.480469)"
+                    />
+                  </clipPath>
+                </defs>
+              </svg>
+              <span class="sr-only">Instagram Link</span></a
+            >
           </div>
         </div>
       </div>

@@ -1,0 +1,191 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+footer {
+  justify-self: end;
+}
+
+main {
+  display: grid;
+  flex-direction: column;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.main_painting {
+  margin: auto;
+}
+
+.painting {
+  width: 400px;
+  height: 400px;
+  background: #fff;
+  display: grid;
+  border-radius: 15px;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-rows: repeat(6, minmax(0, 1fr));
+}
+
+.cube1 {
+  grid-column: span 2;
+}
+
+.cube2 {
+  background-color: yellow;
+  grid-column: span 2;
+}
+
+.cube3 {
+  grid-column: span 2;
+  grid-row: span 4;
+  background-color: red;
+}
+
+.cube4 {
+  grid-column: span 2;
+  grid-row: span 2;
+  background-color: yellow;
+}
+
+.cube5 {
+  grid-row: span 2;
+}
+
+.cube6 {
+  grid-row: span 2;
+}
+
+.cube7 {
+  background-color: black;
+}
+
+.cube8 {
+  grid-column: span 1;
+}
+
+.cube9 {
+  grid-column: span 2;
+}
+
+.strike {
+  box-sizing: content-box;
+  border-radius: 0;
+  border: 3px solid var(--color-dark-blue);
+}
+
+.grids {
+  display: grid;
+  margin: 100px auto;
+  width: 720px;
+  height: 720px;
+  grid-template-areas:
+    "sidebar big_guy big_guy big_guy big_guy big_guy big_guy"
+    "sidebar avg_guy1 avg_guy1 avg_guy2 avg_guy2 avg_guy3 avg_guy3"
+    "sidebar lil_guy1 lil_guy1 lil_guy1 lil_guy2 lil_guy2 lil_guy2"
+  ;
+  grid-template-columns: 200px repeat(6, 70px);
+  grid-template-rows: repeat(3, 200px);
+  gap: 10px 10px;
+  place-items: center;
+  border: 3px solid black;
+  overflow-x: hidden;
+}
+
+.grids div:first-of-type {
+  height: 3fr;
+  padding: 15px;
+  padding-right: none;
+
+}
+
+.grids div:not(:first-of-type) {
+  height: 100%;
+}
+
+.grids div:not(.sidebar)>svg {
+  border-radius: 10px;
+}
+
+.grids svg {
+  fill: black !important;
+}
+
+.sidebar {
+  grid-area: sidebar;
+  font-size: 2.2rem;
+  display: grid;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-decoration: underline;
+  text-decoration-color: #fff;
+  background-color: rgb(233, 233, 233);
+
+}
+
+.side_a {
+  color: var(--color-orange) !important;
+  margin: 8px 0;
+}
+
+.big_guy {
+  grid-area: big_guy;
+}
+
+.avg_guy1 {
+  grid-area: avg_guy1;
+}
+
+.avg_guy2 {
+  grid-area: avg_guy2;
+}
+
+.avg_guy3 {
+  grid-area: avg_guy3;
+}
+
+.lil_guy1 {
+  grid-area: lil_guy1;
+}
+
+.lil_guy2 {
+  grid-area: lil_guy2;
+}
+
+.photo_ads {
+  margin: 100px 100px;
+  display: grid;
+  place-items: center;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.photo_ads div {
+  display: grid;
+  grid-template:
+    "a" 1fr;
+  max-width: 200px;
+  aspect-ratio: 1;
+  background-color: var(--color-black);
+}
+
+.photo_ads div img {
+  grid-area: a;
+  max-width: 100%;
+}
+
+.walleyb {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  grid-area: a;
+  font-size: 2.4rem;
+  font-weight: 600;
+  background-color: transparent;
+  color: var(--color-green)
+}
